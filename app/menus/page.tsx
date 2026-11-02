@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Fragment } from "react";
+import AddToCart from "@/components/order/AddToCart";
+import CartBar from "@/components/order/CartBar";
 import menu from "@/content/menu.json";
+import { isOrderingOpen, takeawayConfig } from "@/lib/takeaway/config";
 
 export const metadata: Metadata = { title: "Speisekarten (Neu) | Königswirt" };
 
-type Item = { name: string; lines: string[][]; vegan?: boolean };
+type Item = {
+  id: string;
+  name: string;
+  lines: string[][];
+  vegan?: boolean;
+  variants: { id: string; label: string | null; priceCents: number }[];
+};
+
+const orderingOpen = isOrderingOpen(takeawayConfig);
+const orderable = new Set(orderingOpen ? takeawayConfig.orderableItemIds : []);
 
 function Line({ cells }: { cells: string[] }) {
   if (cells.length === 1) return <p className="mt-3 whitespace-pre-line first:mt-3">{cells[0]}</p>;
@@ -32,6 +44,15 @@ function Dish({ item }: { item: Item }) {
         </p>
       )}
       {price && <Line cells={price} />}
+      {orderable.has(item.id) && (
+        <AddToCart
+          name={item.name}
+          options={item.variants.map((variant) => ({
+            key: `${item.id}/${variant.id}`,
+            label: variant.label ?? item.name,
+          }))}
+        />
+      )}
     </div>
   );
 }
@@ -54,6 +75,7 @@ export default function MenusPage() {
       <p className="mt-16 font-playfair text-[36px] leading-[47px]">An Guadn!</p>
       <p className="mt-3 font-playfair text-[18px] leading-[23px]">Wünscht euch das Königswirt Team</p>
       <Image src="/images/og.jpg" alt="Königswirt" width={327} height={218} className="mx-auto mt-10 aspect-[3/2] w-[327px] object-cover" />
+      {orderingOpen && <CartBar />}
     </div>
   );
 }

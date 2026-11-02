@@ -34,3 +34,38 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Takeaway ordering
+
+Guests order on `/menus` and check out on `/bestellung`. A Server Action validates the order and emails it to the restaurant. Orders are not stored.
+
+### Environment variables
+
+Copy `.env.example` to `.env.local`. All are server-only.
+
+| Variable | Purpose |
+| --- | --- |
+| `ADMIN_EMAIL` | Recipient of order emails |
+| `ORDER_FROM_EMAIL` | Sender address; its domain must be verified with the provider (SPF/DKIM) |
+| `SMTP_HOST`, `SMTP_PORT` | SMTP server; port 465 uses implicit TLS, others STARTTLS |
+| `SMTP_USER`, `SMTP_PASS` | SMTP credentials |
+
+If any required variable is missing, the server logs which one and the guest sees the "not placed" error.
+
+### Turning ordering on
+
+Ordering stays off until `content/takeaway.json` holds these owner-supplied facts. Until then no cart controls appear and the server rejects every order.
+
+| Key | Meaning | Required |
+| --- | --- | --- |
+| `orderableItemIds` | Item `id`s from `content/menu.json` that can be ordered | Yes |
+| `pickupWindows` | `{ "weekday": 1, "from": "17:00", "to": "21:00" }`, Europe/Berlin, weekday 1 = Monday | Yes |
+| `leadTimeMinutes` | Minimum kitchen lead time | Yes |
+| `privacyNotice` | Notice shown at checkout, worded by the owner or legal adviser | Yes |
+| `maxAdvanceDays` | How far ahead a pickup can be booked; placeholder until the owner confirms | Has default |
+| `minOrderCents`, `maxOrderCents` | Order value limits; `null` means none | No |
+| `paymentNote`, `allergenNote` | Shown at checkout; `null` hides them | No |
+
+Before launch, also update `/privacy-policy` (`content/legal.json`) with the owner's wording. Prices in `variants` must stay in step with the display `lines`; `pnpm test` checks this.
+
+Rate limiting is in memory, so on serverless hosting it applies per instance.

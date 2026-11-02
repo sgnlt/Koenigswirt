@@ -1,0 +1,11 @@
+{
+  "orderableItemIds": [],
+  "pickupWindows": [],
+  "leadTimeMinutes": null,
+  "maxAdvanceDays": 14,
+  "minOrderCents": null,
+  "maxOrderCents": null,
+  "privacyNotice": null,
+  "paymentNote": null,
+  "allergenNote": null
+}
