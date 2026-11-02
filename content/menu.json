@@ -1,0 +1,440 @@
+{
+ "head": [
+  {
+   "img": "/images/logo-gross.png",
+   "alt": "Koenigswirt_LogoGoldStep11_FIN_100416.png",
+   "w": 327,
+   "h": 218
+  },
+  {
+   "text": "Historischer Landgasthof im Allgäu",
+   "size": "18px",
+   "y": 391
+  },
+  {
+   "text": "Herzlich Willkommen",
+   "size": "40px",
+   "y": 313
+  }
+ ],
+ "sections": [
+  {
+   "title": "Vorspeisen",
+   "items": [
+    {
+     "name": "Carpaccio nach Art des Hauses",
+     "lines": [
+      [
+       "Parmesan und gebratene Pilze, Zitrone und Kräuterpesto"
+      ],
+      [
+       "15,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Gebackener Mozzarella",
+     "lines": [
+      [
+       "Fleischtomaten und Salat klassisch"
+      ],
+      [
+       "14,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Salate",
+   "items": [
+    {
+     "name": "Kleiner Vitaminsalat",
+     "lines": [
+      [
+       "mit Kresse, Croûtons"
+      ],
+      [
+       "4,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Super Food Salat",
+     "lines": [
+      [
+       "Blattsalate, gebackenes Landei, frische Früchte, Parmesan, geröstete Kerne, Croûtons"
+      ],
+      [
+       "13,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "wahlweise mit",
+     "lines": [
+      [
+       "Ziegenkäse vom Grill & Blütenhonig\ngegrillten Tofu Asian Style, Sesam\nRindfleischstreifen vom Grill\nHähnchenbrustfiletstreifen vom Grill\nje /"
+      ],
+      [
+       "8,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Suppen",
+   "items": [
+    {
+     "name": "Hausgemachte Rinderkraftbrühe",
+     "lines": [
+      [
+       "Gemüse & Schnittlauch & Flädle"
+      ],
+      [
+       "5,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Wahlweise",
+     "lines": [
+      [
+       "Brät Knödel, / Leberknödel, / Grießnockerl"
+      ],
+      [
+       "2,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Asiatische Karotten Kokossuppe",
+     "lines": [
+      [
+       "Sesam, Tofu -Spieß"
+      ],
+      [
+       "8,50 €"
+      ]
+     ],
+     "vegan": true
+    }
+   ]
+  },
+  {
+   "title": "Hauptgerichte",
+   "items": [
+    {
+     "name": "Bertoldshofner Zwiebelrostbraten 250g",
+     "lines": [
+      [
+       "Argentinisches Rind, Käsespätzle, Speckbohnen, zweierlei Zwiebeln, Dunkelbiersoße"
+      ],
+      [
+       "28,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Rumpsteak Café de Paris",
+     "lines": [
+      [
+       "Argentinisches Rumpsteak mit Paprikakräuterbutter, Kartoffelecken und Gemüse"
+      ],
+      [
+       "300g -",
+       "34,90 €",
+       "250g -",
+       "28,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Züricher Geschnetzeltes",
+     "lines": [
+      [
+       "Züricher Art mit hausgemachten Butterrösti, Preisbeeren und Gemüse"
+      ],
+      [
+       "23,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Knusperschnitzel nach Art des Hauses",
+     "lines": [
+      [
+       "vom Hähnchenbrustfilet mit Kürbiskern und Panko ummantelt\nmit frischem Kartoffel-Gurkensalat"
+      ],
+      [
+       "18,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Klassisches Schnitzel Wiener Art",
+     "lines": [
+      [
+       "vom Stroh-Schwein mit frischem Kartoffel-Gurkensalsat"
+      ],
+      [
+       "17,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Ofenfrischer Schweinekrustenbraten",
+     "lines": [
+      [
+       "Kartoffelknödel mit Brezenschmelze, Natursoße\ndazu Serviettenknödel, Apfelblaukraut"
+      ],
+      [
+       "16,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Original Wiener Backhendl ausgelöst",
+     "lines": [
+      [
+       "in Butterschmalz gebacken, handgerührte Preiselbeeren und Zitrone, \ndazu hausgemachter Kartoffel-Gurkensalat"
+      ],
+      [
+       "22,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Cordon -Bleu des Hauses",
+     "lines": [
+      [
+       "Klassisches Cordon Bleu gefüllt mit Schinken & Käsespätzle, Waldpilzrahm Soße, dazu kleiner Vitamin Salat"
+      ],
+      [
+       "27,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Vegetarisch",
+   "items": [
+    {
+     "name": "Asiatisches Thai Curry",
+     "lines": [
+      [
+       "mit Mu err Pilze, Thai-knoblauch in roter Curry Soße, dazu Sesam Reis"
+      ],
+      [
+       "21,90 €"
+      ]
+     ],
+     "vegan": true
+    },
+    {
+     "name": "Gegrillte Krautkrapfen",
+     "lines": [
+      [
+       "mit einem kleinen Vitamin Salat"
+      ],
+      [
+       "21,90 €"
+      ]
+     ],
+     "vegan": true
+    },
+    {
+     "name": "Allgäuer Käsespätzle",
+     "lines": [
+      [
+       "Mit zweierlei Zwiebel, verschiedene Käsesorten kleiner Blattsalat"
+      ],
+      [
+       "15,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Fisch",
+   "items": [
+    {
+     "name": "Regenbogenforelle Müllerin im Ganzen",
+     "lines": [
+      [
+       "Zitronenbutter, Kräuterkartoffeln, dazu ein kleiner Vitamin Salat"
+      ],
+      [
+       "24,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Bertoldshofner Backfisch vom Welsfilet",
+     "lines": [
+      [
+       "Kartoffel-Gurkensalat, Soße Tatar und Zitrone"
+      ],
+      [
+       "21,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Brotzeiten",
+   "items": [
+    {
+     "name": "Gulaschsuppe nach Art des Hauses",
+     "lines": [
+      [
+       "mit Brot"
+      ],
+      [
+       "11,50 €"
+      ]
+     ]
+    },
+    {
+     "name": "Allgäuer Wurstsalat",
+     "lines": [
+      [
+       "Zwiebelringe, Essiggurken, mit Brot"
+      ],
+      [
+       "9,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Schweizer Art Wurstsalat",
+     "lines": [
+      [
+       "Zwiebelringe , Essiggurken, Allgäuer Käse, mit Brot"
+      ],
+      [
+       "11,50 €"
+      ]
+     ]
+    },
+    {
+     "name": "Allgäuer saurer Käse",
+     "lines": [
+      [
+       "Zwiebeln und Bauernbrot"
+      ],
+      [
+       "10,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Currywurst mit hausgemachten Spezialsoße",
+     "lines": [
+      [
+       "und feine Pommes"
+      ],
+      [
+       "12,90 €"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dessert",
+   "items": [
+    {
+     "name": "Flambierter Cheesecake, Schokoladeneis und frische Früchte",
+     "lines": [
+      [
+       "10,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Schokoladen Soufflé mit Vanilleeis",
+     "lines": [
+      [
+       "8,50 €"
+      ]
+     ]
+    },
+    {
+     "name": "Apfelküchlein mit Vanilleeis und Früchten",
+     "lines": [
+      [
+       "7,90 €"
+      ]
+     ]
+    },
+    {
+     "name": "Eis Palatschinken mit Vanilleeis",
+     "lines": [
+      [
+       "Schokoladen Soße & frischen Beeren"
+      ],
+      [
+       "7,80 €"
+      ]
+     ]
+    },
+    {
+     "name": "Afogato",
+     "lines": [
+      [
+       "Vanilleeis, Doppelter Espresso"
+      ],
+      [
+       "5,80 €"
+      ]
+     ]
+    },
+    {
+     "name": "Gemischtes Eis",
+     "lines": [
+      [
+       "Vanille, Schoko, Erdbeere",
+       "5,20 €",
+       "mit Sahne",
+       "6,20 €"
+      ]
+     ]
+    },
+    {
+     "name": "1 große Kugel Eis",
+     "lines": [
+      [
+       "-",
+       "2,40 €",
+       "mit Sahne",
+       "3,40 €"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "tail": [
+  {
+   "text": "An Guadn!",
+   "size": "36px",
+   "y": 4961
+  },
+  {
+   "text": "Wünscht euch das Königswirt Team",
+   "size": "18px",
+   "y": 5020
+  },
+  {
+   "img": "/images/og.jpg",
+   "alt": "KO╠êW_LogoGoldStep11_FIN_1004168.jpg",
+   "w": 327,
+   "h": 218
+  }
+ ]
+}
