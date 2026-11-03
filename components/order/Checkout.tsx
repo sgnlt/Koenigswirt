@@ -12,8 +12,10 @@ import {
 import { placeOrder } from "@/app/bestellung/actions";
 import type { CatalogLine } from "@/lib/takeaway/catalog";
 import { clearCart, setQuantity, useCart } from "@/lib/takeaway/cart-store";
+import { takeawayConfig } from "@/lib/takeaway/config";
 import { formatEuro, lineTitle } from "@/lib/takeaway/format";
 import { MAX_QUANTITY_PER_LINE, type OrderField, type OrderState } from "@/lib/takeaway/types";
+import { suggestPickupTime } from "@/lib/takeaway/validate";
 import { PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
 const INITIAL: OrderState = { status: "idle" };
@@ -62,6 +64,7 @@ export default function Checkout({ catalog, pickupHint, privacyNotice, paymentNo
   const submitting = useRef(false);
   const statusRef = useRef<HTMLDivElement>(null);
   const formRef = useRef<HTMLFormElement>(null);
+  const pickupRef = useRef<HTMLInputElement>(null);
 
   const byKey = new Map(catalog.map((line) => [line.key, line]));
   const lines = cart.flatMap((entry) => {
@@ -71,6 +74,13 @@ export default function Checkout({ catalog, pickupHint, privacyNotice, paymentNo
   const total = lines.reduce((sum, line) => sum + line.priceCents * line.quantity, 0);
   const fieldErrors: Partial<Record<OrderField, string>> =
     state.status === "invalid" ? state.fieldErrors : {};
+
+  useEffect(() => {
+    if (pickupRef.current && !pickupRef.current.value) {
+      const suggested = suggestPickupTime(takeawayConfig, new Date());
+      if (suggested) pickupRef.current.value = suggested;
+    }
+  }, [lines.length]);
 
   useEffect(() => {
     if (state.status === "idle") return;
@@ -115,7 +125,12 @@ export default function Checkout({ catalog, pickupHint, privacyNotice, paymentNo
 
   return (
     <>
-      <h2 className="mt-8 text-[18px] font-bold">Warenkorb</h2>
+      <div className="mt-8 flex items-baseline justify-between gap-4">
+        <h2 className="text-[18px] font-bold">Warenkorb</h2>
+        <Link href="/menus" className="text-sm underline">
+          Weiter auswählen
+        </Link>
+      </div>
       <ul className="mt-4 divide-y divide-ink/20 border-y border-ink/20">
         {lines.map((line) => {
           const title = lineTitle(line);
@@ -211,6 +226,7 @@ export default function Checkout({ catalog, pickupHint, privacyNotice, paymentNo
         </Field>
         <Field id="pickup" label="Abholzeit" error={fieldErrors.pickup} hint={pickupHint}>
           <input
+            ref={pickupRef}
             id="pickup"
             name="pickup"
             type="datetime-local"

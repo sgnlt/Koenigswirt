@@ -118,6 +118,36 @@ function validatePickup(value: unknown, config: TakeawayConfig, now: Date): Chec
   };
 }
 
+/**
+ * Returns the earliest valid pickup slot in `YYYY-MM-DDTHH:MM` format
+ * (Europe/Berlin wall-clock time, rounded up to a 15-minute step).
+ */
+export function suggestPickupTime(config: TakeawayConfig, now: Date): string | null {
+  if (config.pickupWindows.length === 0) return null;
+  const nowWall = berlinWallClock(now);
+  const lead = config.leadTimeMinutes ?? 0;
+  const step = 15 * MINUTE;
+  const earliest = Math.ceil((nowWall + Math.max(lead, 1) * MINUTE) / step) * step;
+  const latest = nowWall + config.maxAdvanceDays * 1440 * MINUTE;
+  const pad = (n: number) => String(n).padStart(2, "0");
+
+  for (let ts = earliest; ts <= latest; ts += step) {
+    const candidate = new Date(ts);
+    const isoWeekday = candidate.getUTCDay() || 7;
+    const minutes = candidate.getUTCHours() * 60 + candidate.getUTCMinutes();
+    const inWindow = config.pickupWindows.some(
+      (window) =>
+        window.weekday === isoWeekday &&
+        minutes >= minutesOfDay(window.from) &&
+        minutes <= minutesOfDay(window.to),
+    );
+    if (inWindow) {
+      return `${candidate.getUTCFullYear()}-${pad(candidate.getUTCMonth() + 1)}-${pad(candidate.getUTCDate())}T${pad(candidate.getUTCHours())}:${pad(candidate.getUTCMinutes())}`;
+    }
+  }
+  return null;
+}
+
 function validateItems(
   value: unknown,
   catalog: CatalogLine[],

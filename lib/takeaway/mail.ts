@@ -9,6 +9,11 @@ const REQUIRED = ["ADMIN_EMAIL", "ORDER_FROM_EMAIL", "SMTP_HOST", "SMTP_PORT"] a
 export async function sendOrderEmail(order: ValidOrder): Promise<boolean> {
   const missing = REQUIRED.filter((name) => !process.env[name]);
   if (missing.length > 0) {
+    if (process.env.NODE_ENV === "development") {
+      const mail = renderOrderEmail(order);
+      console.info(`[takeaway] Dev mode (no SMTP env): simulated email "${mail.subject}"\n${mail.text}`);
+      return true;
+    }
     console.error(`[takeaway] Order not sent: missing env ${missing.join(", ")}`);
     return false;
   }

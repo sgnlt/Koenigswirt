@@ -4,7 +4,8 @@ import { buildCatalog, type CatalogLine } from "./catalog";
 import { isOrderingOpen, takeawayConfig, type TakeawayConfig } from "./config";
 import { renderOrderEmail } from "./email";
 import { isRateLimited, recordAttempt } from "./rate-limit";
-import { validateOrder, type RawOrder } from "./validate";
+import { filterMenuSections, type MenuSection } from "./search";
+import { suggestPickupTime, validateOrder, type RawOrder } from "./validate";
 
 const config: TakeawayConfig = {
   orderableItemIds: ["carpaccio-nach-art-des-hauses", "rumpsteak-cafe-de-paris"],
@@ -210,5 +211,39 @@ describe("rate limit", () => {
     expect(isRateLimited("client", start)).toBe(true);
     expect(isRateLimited("other", start)).toBe(false);
     expect(isRateLimited("client", start + 10 * 60_000)).toBe(false);
+  });
+});
+
+describe("filterMenuSections", () => {
+  const sections = menu.sections as MenuSection[];
+  const ids = (filters: Parameters<typeof filterMenuSections>[1]) =>
+    filterMenuSections(sections, filters).flatMap((s) => s.items.map((i) => i.id));
+
+  it("matches by dish name, ingredient, and umlaut/ASCII variants", () => {
+    expect(ids({ query: "Käsespätzle" })).toContain("allgaeuer-kaesespaetzle");
+    expect(ids({ query: "kaesespaetzle" })).toContain("allgaeuer-kaesespaetzle");
+    expect(ids({ query: "kasespatzle" })).toContain("allgaeuer-kaesespaetzle");
+    expect(ids({ query: "cafe paris" })).toEqual(["rumpsteak-cafe-de-paris"]);
+    expect(ids({ query: "Parmesan Pilze" })).toEqual(["carpaccio-nach-art-des-hauses"]);
+  });
+
+  it("filters by category and vegan flag", () => {
+    expect(ids({ category: "Fisch" })).toEqual([
+      "regenbogenforelle-muellerin-im-ganzen",
+      "bertoldshofner-backfisch-vom-welsfilet",
+    ]);
+    expect(ids({ veganOnly: true })).toEqual([
+      "asiatische-karotten-kokossuppe",
+      "asiatisches-thai-curry",
+      "gegrillte-krautkrapfen",
+    ]);
+  });
+});
+
+describe("suggestPickupTime", () => {
+  it("suggests a valid pickup slot within the configured windows", () => {
+    const suggested = suggestPickupTime(config, now);
+    expect(suggested).toBe("2026-11-02T17:00");
+    expect(run({ pickup: suggested }).ok).toBe(true);
   });
 });
