@@ -11,3 +11,6 @@ export const NAV_LINKS = [
   { label: "SALETTL", href: "/#salettl" },
   { label: "KONTAKT", href: "/#kontakt" },
 ];
+
+export const PHONE_DISPLAY = "08342 / 89 89 340";
+export const PHONE_HREF = "tel:083428989340";

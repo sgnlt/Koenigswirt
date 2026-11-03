@@ -22,6 +22,7 @@
    "title": "Vorspeisen",
    "items": [
     {
+     "id": "carpaccio-nach-art-des-hauses",
      "name": "Carpaccio nach Art des Hauses",
      "lines": [
       [
@@ -30,9 +31,17 @@
       [
        "15,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1590
+      }
      ]
     },
     {
+     "id": "gebackener-mozzarella",
      "name": "Gebackener Mozzarella",
      "lines": [
       [
@@ -41,6 +50,13 @@
       [
        "14,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1490
+      }
      ]
     }
    ]
@@ -49,6 +65,7 @@
    "title": "Salate",
    "items": [
     {
+     "id": "kleiner-vitaminsalat",
      "name": "Kleiner Vitaminsalat",
      "lines": [
       [
@@ -57,9 +74,17 @@
       [
        "4,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 490
+      }
      ]
     },
     {
+     "id": "super-food-salat",
      "name": "Super Food Salat",
      "lines": [
       [
@@ -68,9 +93,17 @@
       [
        "13,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1390
+      }
      ]
     },
     {
+     "id": "salate-wahlweise-mit",
      "name": "wahlweise mit",
      "lines": [
       [
@@ -79,6 +112,28 @@
       [
        "8,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "ziegenkaese-vom-grill-bluetenhonig",
+       "label": "Ziegenkäse vom Grill & Blütenhonig",
+       "priceCents": 890
+      },
+      {
+       "id": "gegrillter-tofu-asian-style-sesam",
+       "label": "Gegrillter Tofu Asian Style, Sesam",
+       "priceCents": 890
+      },
+      {
+       "id": "rindfleischstreifen-vom-grill",
+       "label": "Rindfleischstreifen vom Grill",
+       "priceCents": 890
+      },
+      {
+       "id": "haehnchenbrustfiletstreifen-vom-grill",
+       "label": "Hähnchenbrustfiletstreifen vom Grill",
+       "priceCents": 890
+      }
      ]
     }
    ]
@@ -87,6 +142,7 @@
    "title": "Suppen",
    "items": [
     {
+     "id": "hausgemachte-rinderkraftbruehe",
      "name": "Hausgemachte Rinderkraftbrühe",
      "lines": [
       [
@@ -95,9 +151,17 @@
       [
        "5,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 590
+      }
      ]
     },
     {
+     "id": "suppen-wahlweise",
      "name": "Wahlweise",
      "lines": [
       [
@@ -106,9 +170,27 @@
       [
        "2,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "braet-knoedel",
+       "label": "Brät Knödel",
+       "priceCents": 290
+      },
+      {
+       "id": "leberknoedel",
+       "label": "Leberknödel",
+       "priceCents": 290
+      },
+      {
+       "id": "griessnockerl",
+       "label": "Grießnockerl",
+       "priceCents": 290
+      }
      ]
     },
     {
+     "id": "asiatische-karotten-kokossuppe",
      "name": "Asiatische Karotten Kokossuppe",
      "lines": [
       [
@@ -118,7 +200,14 @@
        "8,50 €"
       ]
      ],
-     "vegan": true
+     "vegan": true,
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 850
+      }
+     ]
     }
    ]
   },
@@ -126,6 +215,7 @@
    "title": "Hauptgerichte",
    "items": [
     {
+     "id": "bertoldshofner-zwiebelrostbraten-250g",
      "name": "Bertoldshofner Zwiebelrostbraten 250g",
      "lines": [
       [
@@ -134,9 +224,17 @@
       [
        "28,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2890
+      }
      ]
     },
     {
+     "id": "rumpsteak-cafe-de-paris",
      "name": "Rumpsteak Café de Paris",
      "lines": [
       [
@@ -148,9 +246,22 @@
        "250g -",
        "28,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "300g",
+       "label": "300g",
+       "priceCents": 3490
+      },
+      {
+       "id": "250g",
+       "label": "250g",
+       "priceCents": 2890
+      }
      ]
     },
     {
+     "id": "zuericher-geschnetzeltes",
      "name": "Züricher Geschnetzeltes",
      "lines": [
       [
@@ -159,9 +270,17 @@
       [
        "23,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2390
+      }
      ]
     },
     {
+     "id": "knusperschnitzel-nach-art-des-hauses",
      "name": "Knusperschnitzel nach Art des Hauses",
      "lines": [
       [
@@ -170,9 +289,17 @@
       [
        "18,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
      ]
     },
     {
+     "id": "klassisches-schnitzel-wiener-art",
      "name": "Klassisches Schnitzel Wiener Art",
      "lines": [
       [
@@ -181,9 +308,17 @@
       [
        "17,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1790
+      }
      ]
     },
     {
+     "id": "ofenfrischer-schweinekrustenbraten",
      "name": "Ofenfrischer Schweinekrustenbraten",
      "lines": [
       [
@@ -192,9 +327,17 @@
       [
        "16,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1690
+      }
      ]
     },
     {
+     "id": "original-wiener-backhendl-ausgeloest",
      "name": "Original Wiener Backhendl ausgelöst",
      "lines": [
       [
@@ -203,9 +346,17 @@
       [
        "22,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2290
+      }
      ]
     },
     {
+     "id": "cordon-bleu-des-hauses",
      "name": "Cordon -Bleu des Hauses",
      "lines": [
       [
@@ -214,6 +365,13 @@
       [
        "27,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2790
+      }
      ]
     }
    ]
@@ -222,6 +380,7 @@
    "title": "Vegetarisch",
    "items": [
     {
+     "id": "asiatisches-thai-curry",
      "name": "Asiatisches Thai Curry",
      "lines": [
       [
@@ -231,9 +390,17 @@
        "21,90 €"
       ]
      ],
-     "vegan": true
+     "vegan": true,
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
+     ]
     },
     {
+     "id": "gegrillte-krautkrapfen",
      "name": "Gegrillte Krautkrapfen",
      "lines": [
       [
@@ -243,9 +410,17 @@
        "21,90 €"
       ]
      ],
-     "vegan": true
+     "vegan": true,
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
+     ]
     },
     {
+     "id": "allgaeuer-kaesespaetzle",
      "name": "Allgäuer Käsespätzle",
      "lines": [
       [
@@ -254,6 +429,13 @@
       [
        "15,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1590
+      }
      ]
     }
    ]
@@ -262,6 +444,7 @@
    "title": "Fisch",
    "items": [
     {
+     "id": "regenbogenforelle-muellerin-im-ganzen",
      "name": "Regenbogenforelle Müllerin im Ganzen",
      "lines": [
       [
@@ -270,9 +453,17 @@
       [
        "24,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2490
+      }
      ]
     },
     {
+     "id": "bertoldshofner-backfisch-vom-welsfilet",
      "name": "Bertoldshofner Backfisch vom Welsfilet",
      "lines": [
       [
@@ -281,6 +472,13 @@
       [
        "21,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
      ]
     }
    ]
@@ -289,6 +487,7 @@
    "title": "Brotzeiten",
    "items": [
     {
+     "id": "gulaschsuppe-nach-art-des-hauses",
      "name": "Gulaschsuppe nach Art des Hauses",
      "lines": [
       [
@@ -297,9 +496,17 @@
       [
        "11,50 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1150
+      }
      ]
     },
     {
+     "id": "allgaeuer-wurstsalat",
      "name": "Allgäuer Wurstsalat",
      "lines": [
       [
@@ -308,9 +515,17 @@
       [
        "9,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 990
+      }
      ]
     },
     {
+     "id": "schweizer-art-wurstsalat",
      "name": "Schweizer Art Wurstsalat",
      "lines": [
       [
@@ -319,9 +534,17 @@
       [
        "11,50 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1150
+      }
      ]
     },
     {
+     "id": "allgaeuer-saurer-kaese",
      "name": "Allgäuer saurer Käse",
      "lines": [
       [
@@ -330,9 +553,17 @@
       [
        "10,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
+      }
      ]
     },
     {
+     "id": "currywurst-mit-hausgemachten-spezialsosse",
      "name": "Currywurst mit hausgemachten Spezialsoße",
      "lines": [
       [
@@ -341,6 +572,13 @@
       [
        "12,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1290
+      }
      ]
     }
    ]
@@ -349,30 +587,55 @@
    "title": "Dessert",
    "items": [
     {
+     "id": "flambierter-cheesecake-schokoladeneis-und-frische-fruechte",
      "name": "Flambierter Cheesecake, Schokoladeneis und frische Früchte",
      "lines": [
       [
        "10,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
+      }
      ]
     },
     {
+     "id": "schokoladen-souffle-mit-vanilleeis",
      "name": "Schokoladen Soufflé mit Vanilleeis",
      "lines": [
       [
        "8,50 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 850
+      }
      ]
     },
     {
+     "id": "apfelkuechlein-mit-vanilleeis-und-fruechten",
      "name": "Apfelküchlein mit Vanilleeis und Früchten",
      "lines": [
       [
        "7,90 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
+      }
      ]
     },
     {
+     "id": "eis-palatschinken-mit-vanilleeis",
      "name": "Eis Palatschinken mit Vanilleeis",
      "lines": [
       [
@@ -381,9 +644,17 @@
       [
        "7,80 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 780
+      }
      ]
     },
     {
+     "id": "afogato",
      "name": "Afogato",
      "lines": [
       [
@@ -392,9 +663,17 @@
       [
        "5,80 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 580
+      }
      ]
     },
     {
+     "id": "gemischtes-eis",
      "name": "Gemischtes Eis",
      "lines": [
       [
@@ -403,9 +682,22 @@
        "mit Sahne",
        "6,20 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "vanille-schoko-erdbeere",
+       "label": "Vanille, Schoko, Erdbeere",
+       "priceCents": 520
+      },
+      {
+       "id": "mit-sahne",
+       "label": "mit Sahne",
+       "priceCents": 620
+      }
      ]
     },
     {
+     "id": "1-grosse-kugel-eis",
      "name": "1 große Kugel Eis",
      "lines": [
       [
@@ -414,6 +706,18 @@
        "mit Sahne",
        "3,40 €"
       ]
+     ],
+     "variants": [
+      {
+       "id": "ohne-sahne",
+       "label": "ohne Sahne",
+       "priceCents": 240
+      },
+      {
+       "id": "mit-sahne",
+       "label": "mit Sahne",
+       "priceCents": 340
+      }
      ]
     }
    ]
