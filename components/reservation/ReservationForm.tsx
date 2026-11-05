@@ -282,7 +282,7 @@ export default function ReservationForm({ openingHoursSummary, leadTimeMinutes }
         ref={formRef}
         onSubmit={onSubmit}
         noValidate
-        className="space-y-6"
+        className="min-w-0 space-y-6"
       >
         <div ref={statusRef} tabIndex={-1} role="alert" className="outline-none">
           {state.status === "failed" && (
@@ -586,7 +586,7 @@ export default function ReservationForm({ openingHoursSummary, leadTimeMinutes }
             <div className="mt-5 grid gap-5 sm:grid-cols-2">
               <Field
                 id="email"
-                label="E-Mail-Adresse (für die Bestätigung)"
+                label="E-Mail-Adresse"
                 error={fieldErrors.email}
               >
                 <input
@@ -608,7 +608,7 @@ export default function ReservationForm({ openingHoursSummary, leadTimeMinutes }
 
               <Field
                 id="phone"
-                label="Telefonnummer (für Rückfragen)"
+                label="Telefonnummer"
                 error={fieldErrors.phone}
               >
                 <input
