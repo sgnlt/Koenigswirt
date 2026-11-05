@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { BOOKING_URL, GASTRONAUT_URL, NAV_LINKS, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import { BOOKING_URL, NAV_LINKS, PHONE_DISPLAY, PHONE_HREF, RESERVATION_HREF } from "@/lib/site";
 import { useCart } from "@/lib/takeaway/cart-store";
 
 // The live site highlights RESTAURANT and KONTAKT while scrolling on the home page.
@@ -128,6 +128,13 @@ export default function Header() {
             </Link>
           )}
 
+          <Link
+            href={RESERVATION_HREF}
+            className="hidden h-[42px] items-center justify-center rounded-full border border-ink/25 bg-cream px-4 font-madefor text-xs font-medium tracking-[0.03em] text-ink transition-colors hover:border-wine hover:text-wine sm:inline-flex"
+          >
+            TISCH RESERVIEREN
+          </Link>
+
           <a
             href={BOOKING_URL}
             target="_blank"
@@ -217,15 +224,13 @@ export default function Header() {
                 </Link>
               )}
 
-              <a
-                href={GASTRONAUT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={RESERVATION_HREF}
                 onClick={() => setOpen(false)}
                 className="flex min-h-12 items-center justify-center rounded-full border border-ink/30 bg-cream px-6 text-sm font-medium text-ink"
               >
                 TISCH RESERVIEREN
-              </a>
+              </Link>
 
               <a
                 href={BOOKING_URL}

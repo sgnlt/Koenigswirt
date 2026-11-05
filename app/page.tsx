@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import LocationSlider from "@/components/LocationSlider";
-import { BOOKING_URL, GASTRONAUT_URL, MAP_URL } from "@/lib/site";
+import { BOOKING_URL, MAP_URL, RESERVATION_HREF } from "@/lib/site";
 
 export const metadata: Metadata = { title: "STARTSEITE | KÖNIGSWIRT" };
 
@@ -86,14 +86,12 @@ export default function Home() {
             >
               SPEISEKARTE & ABHOLUNG
             </Link>
-            <a
-              href={GASTRONAUT_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href={RESERVATION_HREF}
               className="inline-flex h-10 items-center justify-center rounded-full border border-ink px-6 text-[13px] font-medium tracking-[0.03em] text-ink transition-colors hover:bg-ink hover:text-cream"
             >
               TISCH RESERVIEREN
-            </a>
+            </Link>
           </div>
         </div>
         <div className="relative mt-[64px] h-[240px] lg:ml-[5%] lg:mt-[30px] lg:h-[472px] lg:w-[85%]">
