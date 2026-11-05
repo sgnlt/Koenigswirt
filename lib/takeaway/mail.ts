@@ -1,50 +1,64 @@
 import "server-only";
-import nodemailer from "nodemailer";
 import { renderOrderEmail } from "./email";
 import type { ValidOrder } from "./validate";
 
-const REQUIRED = ["ADMIN_EMAIL", "ORDER_FROM_EMAIL", "SMTP_HOST", "SMTP_PORT"] as const;
+const REQUIRED = ["ADMIN_EMAIL", "RESEND_API_KEY"] as const;
+const DEFAULT_FROM = "Königswirt Bestellung <onboarding@resend.dev>";
 
-/** Resolves only once the SMTP server has accepted the message for the admin. */
+/** Resolves only once Resend has accepted the message for the admin. */
 export async function sendOrderEmail(order: ValidOrder): Promise<boolean> {
   const missing = REQUIRED.filter((name) => !process.env[name]);
   if (missing.length > 0) {
     if (process.env.NODE_ENV === "development") {
       const mail = renderOrderEmail(order);
-      console.info(`[takeaway] Dev mode (no SMTP env): simulated email "${mail.subject}"\n${mail.text}`);
+      console.info(
+        `[takeaway] Dev mode (no Resend env): simulated email "${mail.subject}"\n${mail.text}`,
+      );
       return true;
     }
     console.error(`[takeaway] Order not sent: missing env ${missing.join(", ")}`);
     return false;
   }
 
-  const port = Number(process.env.SMTP_PORT);
-  const { SMTP_USER: user, SMTP_PASS: pass } = process.env;
-  const transport = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    port,
-    secure: port === 465,
-    auth: user && pass ? { user, pass } : undefined,
-    connectionTimeout: 10_000,
-    greetingTimeout: 10_000,
-    socketTimeout: 20_000,
-  });
+  const from = process.env.ORDER_FROM_EMAIL?.trim() || DEFAULT_FROM;
+  const to = process.env.ADMIN_EMAIL!.trim();
+  const { subject, text, html } = renderOrderEmail(order);
 
   try {
-    const info = await transport.sendMail({
-      from: process.env.ORDER_FROM_EMAIL,
-      to: process.env.ADMIN_EMAIL,
-      ...renderOrderEmail(order),
+    const response = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to: [to],
+        subject,
+        text,
+        html,
+      }),
+      signal: AbortSignal.timeout(15_000),
     });
-    if (info.accepted.length === 0) {
-      console.error("[takeaway] Order not sent: recipient rejected by SMTP server");
+
+    if (!response.ok) {
+      let errorName = "unknown";
+      try {
+        const data = (await response.json()) as { name?: string };
+        if (data?.name) errorName = data.name;
+      } catch {
+        // Ignore JSON parse errors on non-JSON error responses.
+      }
+      console.error(
+        `[takeaway] Order not sent: Resend HTTP ${response.status} (${errorName})`,
+      );
       return false;
     }
+
     return true;
   } catch (error) {
-    // Codes only: a full error can echo the message, which holds customer data.
-    const { code, responseCode } = error as { code?: string; responseCode?: number };
-    console.error(`[takeaway] Order not sent: SMTP error code=${code} response=${responseCode}`);
+    const name = error instanceof Error ? error.name : "unknown";
+    console.error(`[takeaway] Order not sent: Resend request error (${name})`);
     return false;
   }
 }
