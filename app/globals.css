@@ -2,15 +2,20 @@
 
 @theme {
   --color-cream: #fffffe;
-  --color-ink: #333333;
+  --color-parchment: #f8f5ef;
+  --color-parchment-deep: #f0ebe1;
+  --color-ink: #262220;
   --color-wine: #852331;
   --color-wine-dark: #4a1420;
   --color-accent: #972d2b;
   --color-nav-active: #8b0000;
+  --color-gold: #b08d57;
+  --color-forest: #2e5a36;
   --color-rose: #a46770;
   --color-periwinkle: #8390c8;
   --color-silver: #cccccb;
-  --color-muted: #666666;
+  --color-muted: #655e57;
+  --color-border: #dfd8cc;
 
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-playfair: var(--font-playfair-display), Georgia, serif;
@@ -20,6 +25,14 @@
 }
 
 @layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-border, currentColor);
+  }
+
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 104px;

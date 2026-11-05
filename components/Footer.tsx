@@ -1,83 +1,113 @@
+import Image from "next/image";
 import Link from "next/link";
+import { BOOKING_URL, GASTRONAUT_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
 
-const desktopMenu = [
-  { label: "RESTAURANT", href: "/#restaurant", underline: false },
-  { label: "APARTMENTS", href: "/#apartments", underline: true },
-  { label: "SAAL MIT BÜHNE", href: "/#saal", underline: true },
-  { label: "SALETTL", href: "/#salettl", underline: true },
-  { label: "PRESSE", href: "/presse", underline: false },
-];
-
-const mobileMenu = [
+const footerLinks = [
   { label: "RESTAURANT", href: "/#restaurant" },
+  { label: "SPEISEKARTE & ABHOLUNG", href: "/menus" },
   { label: "APARTMENTS", href: "/#apartments" },
   { label: "SAAL MIT BÜHNE", href: "/#saal" },
   { label: "SALETTL", href: "/#salettl" },
-  { label: "BIERGARTEN", href: "/#salettl" },
+  { label: "TAGUNGEN", href: "/tagungen" },
+  { label: "PRESSE", href: "/presse" },
 ];
 
 export default function Footer() {
   return (
-    <footer id="kontakt" className="bg-cream">
-      {/* Desktop */}
-      <div className="relative hidden h-[414px] lg:block">
-        <div className="absolute left-[18px] top-[18px]">
-          <h2 className="font-playfair text-[29.25px] font-bold leading-[38px]">Menu</h2>
-          <ul className="mt-[25px] text-[15.75px] leading-[20.5px]">
-            {desktopMenu.map((link) => (
-              <li key={link.label} className="mb-[6px]">
-                <Link href={link.href} className={link.underline ? "underline" : ""}>
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="absolute left-[411px] top-[52px] text-[15.75px] leading-[24px]">
-          <h2 className="font-playfair text-[29.25px] font-bold leading-[38px]">Unsere Adresse</h2>
-          <p className="mt-[21px]">Schongauer Str. 13</p>
-          <p>87616 Marktoberdorf / Bertoldshofen</p>
-          <p className="mt-[21px]">
-            Tel.: <a href="tel:083428989340" className="underline">08342 / 89 89 340</a>
-          </p>
-          <p>
-            E-Mail: <a href="mailto:info@koenigswirt.de" className="underline">info@koenigswirt.de</a>
-          </p>
-        </div>
-        <p className="absolute left-[98px] top-[369px] text-sm leading-4">© 2024 by Königswirt. Built by PAOO</p>
-        <Link href="/blank" className="absolute left-[463px] top-[369px] text-sm leading-4 underline">
-          Datenschutzerklärung
-        </Link>
-        <Link href="/impressum" className="absolute left-[621px] top-[369px] text-sm leading-4 underline">
-          Impressum
-        </Link>
-      </div>
+    <footer id="kontakt" className="border-t border-border bg-parchment/60 text-ink">
+      <div className="mx-auto max-w-[1200px] px-6 py-12 lg:px-10 lg:py-16">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div>
+            <h2 className="font-playfair text-2xl font-bold leading-tight text-ink">Menu</h2>
+            <ul className="mt-5 space-y-2.5 text-sm">
+              {footerLinks.map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="inline-block text-ink/90 transition-colors hover:text-wine hover:underline"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-      {/* Mobile */}
-      <div className="h-[832px] px-[52px] pt-[29px] text-[13px] leading-[17px] lg:hidden">
-        <h2 className="font-playfair text-[22px] leading-[29px]">Menu</h2>
-        <ul className="mt-[26px]">
-          {mobileMenu.map((link) => (
-            <li key={link.label} className="mb-[10px]">
-              <Link href={link.href}>{link.label}</Link>
-            </li>
-          ))}
-        </ul>
-        <h2 className="mt-[27px] font-playfair text-[22px] leading-[29px]">Unsere Adresse</h2>
-        <p className="mt-[25px]">Schongauer Str. 13</p>
-        <p className="mt-[10px]">87616 Marktoberdorf / Bertoldshofen</p>
-        <p className="mt-7">
-          Tel.: <a href="tel:083428989340" className="underline">08342 / 8989340</a>
-        </p>
-        <p className="mt-[10px]">
-          E-Mail: <a href="mailto:info@koenigswirt.de" className="underline">info@koenigswirt.de</a>
-        </p>
-        <p className="mt-7">
-          <Link href="/blank" className="underline">Datenschutzerklärung</Link>
-        </p>
-        <p className="mt-[10px]">
-          <Link href="/impressum" className="underline">Impressum</Link>
-        </p>
+          <div>
+            <h2 className="font-playfair text-2xl font-bold leading-tight text-ink">
+              Unsere Adresse
+            </h2>
+            <address className="mt-5 not-italic text-sm leading-6 text-ink/90">
+              <p className="font-semibold text-ink">Königswirt · Historischer Landgasthof</p>
+              <p>Schongauer Str. 13</p>
+              <p>87616 Marktoberdorf / Bertoldshofen</p>
+              <p className="mt-4">
+                Tel.:{" "}
+                <a href={PHONE_HREF} className="underline hover:text-wine">
+                  {PHONE_DISPLAY}
+                </a>
+              </p>
+              <p>
+                E-Mail:{" "}
+                <a href="mailto:info@koenigswirt.de" className="underline hover:text-wine">
+                  info@koenigswirt.de
+                </a>
+              </p>
+            </address>
+          </div>
+
+          <div>
+            <div className="flex items-center gap-2.5">
+              <Image src="/images/krone.png" alt="" width={36} height={22} className="w-8" />
+              <h2 className="font-playfair text-2xl font-bold leading-tight text-ink">
+                Direkt buchen & bestellen
+              </h2>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-muted">
+              Bestellen Sie unsere Gerichte bequem online zur Abholung oder reservieren Sie Ihren
+              Tisch und Ihr Apartment direkt.
+            </p>
+            <div className="mt-5 flex flex-col items-start gap-2.5">
+              <Link
+                href="/menus"
+                className="inline-flex min-h-10 items-center justify-center rounded-full bg-wine px-5 text-xs font-semibold tracking-[0.03em] text-cream transition-colors hover:bg-wine-dark"
+              >
+                SPEISEKARTE & ABHOLBESTELLUNG
+              </Link>
+              <a
+                href={GASTRONAUT_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-10 items-center justify-center rounded-full border border-ink/30 bg-cream px-5 text-xs font-medium tracking-[0.03em] text-ink transition-colors hover:border-wine hover:text-wine"
+              >
+                TISCH RESERVIEREN
+              </a>
+              <a
+                href={BOOKING_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-10 items-center justify-center rounded-full border border-ink/30 bg-cream px-5 text-xs font-medium tracking-[0.03em] text-ink transition-colors hover:border-wine hover:text-wine"
+              >
+                APARTMENT BUCHEN
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted sm:flex-row sm:items-center">
+          <p>© 2024 by Königswirt. Built by PAOO</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/privacy-policy" className="underline hover:text-ink">
+              Datenschutzerklärung
+            </Link>
+            <Link href="/impressum" className="underline hover:text-ink">
+              Impressum
+            </Link>
+            <Link href="/accessibility-statement" className="underline hover:text-ink">
+              Barrierefreiheit
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
