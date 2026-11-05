@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import CartBar from "@/components/order/CartBar";
 import MenuExplorer from "@/components/order/MenuExplorer";
 import menu from "@/content/menu.json";
-import { GASTRONAUT_URL } from "@/lib/site";
+import { RESERVATION_HREF } from "@/lib/site";
 import { buildCatalog } from "@/lib/takeaway/catalog";
 import { isOrderingOpen, takeawayConfig } from "@/lib/takeaway/config";
 import { formatPickupWindowsSummary } from "@/lib/takeaway/format";
@@ -45,15 +46,13 @@ export default function MenusPage() {
               </span>
             </div>
           )}
-          <a
-            href={GASTRONAUT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={RESERVATION_HREF}
             className="inline-flex min-h-8 items-center gap-1.5 rounded-full border border-border bg-cream px-3.5 py-1.5 font-medium text-ink transition-colors hover:border-wine hover:text-wine sm:min-h-9 sm:px-4 sm:py-2"
           >
             <span>Vor Ort essen? Tisch reservieren</span>
-            <span aria-hidden="true">↗</span>
-          </a>
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </header>
 

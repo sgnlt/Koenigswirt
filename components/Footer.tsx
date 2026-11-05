@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import { BOOKING_URL, GASTRONAUT_URL, PHONE_DISPLAY, PHONE_HREF } from "@/lib/site";
+import { BOOKING_URL, PHONE_DISPLAY, PHONE_HREF, RESERVATION_HREF } from "@/lib/site";
 
 const footerLinks = [
   { label: "RESTAURANT", href: "/#restaurant" },
   { label: "SPEISEKARTE & ABHOLUNG", href: "/menus" },
+  { label: "TISCH RESERVIEREN", href: RESERVATION_HREF },
   { label: "APARTMENTS", href: "/#apartments" },
   { label: "SAAL MIT BÜHNE", href: "/#saal" },
   { label: "SALETTL", href: "/#salettl" },
@@ -74,14 +75,12 @@ export default function Footer() {
               >
                 SPEISEKARTE & ABHOLBESTELLUNG
               </Link>
-              <a
-                href={GASTRONAUT_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href={RESERVATION_HREF}
                 className="inline-flex min-h-10 items-center justify-center rounded-full border border-ink/30 bg-cream px-5 text-xs font-medium tracking-[0.03em] text-ink transition-colors hover:border-wine hover:text-wine"
               >
                 TISCH RESERVIEREN
-              </a>
+              </Link>
               <a
                 href={BOOKING_URL}
                 target="_blank"

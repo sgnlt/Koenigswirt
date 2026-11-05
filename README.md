@@ -35,9 +35,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Takeaway ordering
+## Takeaway ordering & table reservations
 
-Guests order on `/menus` and check out on `/bestellung`. A Server Action validates the order and emails it to the restaurant. Orders are not stored.
+- **Takeaway ordering**: Guests order on `/menus` and check out on `/bestellung`. A Server Action validates the order and emails it to the restaurant via Resend. Orders are not stored.
+- **Table reservations**: Guests request a table on `/reservierung`. A Server Action validates the reservation details (no automated capacity check) and emails the request to `ADMIN_EMAIL` (with `reply_to` set to the guest's email so the owner can confirm directly).
 
 ### Environment variables
 
@@ -45,12 +46,11 @@ Copy `.env.example` to `.env.local`. All are server-only.
 
 | Variable | Purpose |
 | --- | --- |
-| `ADMIN_EMAIL` | Recipient of order emails |
-| `ORDER_FROM_EMAIL` | Sender address; its domain must be verified with the provider (SPF/DKIM) |
-| `SMTP_HOST`, `SMTP_PORT` | SMTP server; port 465 uses implicit TLS, others STARTTLS |
-| `SMTP_USER`, `SMTP_PASS` | SMTP credentials |
+| `RESEND_API_KEY` | Resend API key (`re_...`) |
+| `ADMIN_EMAIL` | Recipient of takeaway order and reservation emails |
+| `ORDER_FROM_EMAIL` | Optional sender address; defaults to `onboarding@resend.dev` when unset |
 
-If any required variable is missing, the server logs which one and the guest sees the "not placed" error.
+If any required variable is missing in production, the server logs which one and the guest sees the fallback error with the restaurant's phone number.
 
 ### Turning ordering on
 
