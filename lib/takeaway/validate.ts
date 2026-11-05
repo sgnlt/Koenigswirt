@@ -1,6 +1,6 @@
 import type { CatalogLine } from "./catalog";
 import type { TakeawayConfig } from "./config";
-import { formatEuro, weekdayName } from "./format";
+import { formatEuro, weekdayName, weekdayShortName } from "./format";
 import { MAX_QUANTITY_PER_LINE, type OrderField } from "./types";
 
 const MAX_LINES = 50;
@@ -116,6 +116,118 @@ function validatePickup(value: unknown, config: TakeawayConfig, now: Date): Chec
       label: `${weekdayName(isoWeekday)}, ${pad(day)}.${pad(month)}.${year}, ${pad(hour)}:${pad(minute)} Uhr`,
     },
   };
+}
+
+export type PickupDaySlots = {
+  /** YYYY-MM-DD in Europe/Berlin wall-clock time */
+  dateKey: string;
+  /** Short human label, e.g. "Heute", "Morgen", or "Sa, 07.11." */
+  shortLabel: string;
+  /** Secondary date label, e.g. "Mo, 02.11." */
+  dateLabel: string;
+  /** Full weekday name + date, e.g. "Montag, 02.11.2026" */
+  fullLabel: string;
+  /** Valid 15-minute slots for this date */
+  slots: {
+    /** Full value for the pickup input: YYYY-MM-DDTHH:MM */
+    value: string;
+    /** Display time: HH:MM */
+    time: string;
+  }[];
+};
+
+/**
+ * Computes available pickup days and 15-minute time slots within `maxAdvanceDays`
+ * in Europe/Berlin wall-clock time, respecting `leadTimeMinutes` and `pickupWindows`.
+ */
+export function getAvailablePickupDays(
+  config: TakeawayConfig,
+  now: Date,
+): PickupDaySlots[] {
+  if (config.pickupWindows.length === 0) return [];
+  const nowWall = berlinWallClock(now);
+  const lead = config.leadTimeMinutes ?? 0;
+  const step = 15 * MINUTE;
+  const earliest = Math.ceil((nowWall + Math.max(lead, 1) * MINUTE) / step) * step;
+  const latest = nowWall + config.maxAdvanceDays * 1440 * MINUTE;
+  const pad = (n: number) => String(n).padStart(2, "0");
+
+  const nowDate = new Date(nowWall);
+  const todayKey = `${nowDate.getUTCFullYear()}-${pad(nowDate.getUTCMonth() + 1)}-${pad(nowDate.getUTCDate())}`;
+  const tomorrowDate = new Date(
+    Date.UTC(nowDate.getUTCFullYear(), nowDate.getUTCMonth(), nowDate.getUTCDate() + 1),
+  );
+  const tomorrowKey = `${tomorrowDate.getUTCFullYear()}-${pad(tomorrowDate.getUTCMonth() + 1)}-${pad(tomorrowDate.getUTCDate())}`;
+
+  const byDate = new Map<string, PickupDaySlots>();
+
+  for (let ts = earliest; ts <= latest; ts += step) {
+    const candidate = new Date(ts);
+    const isoWeekday = candidate.getUTCDay() || 7;
+    const minutes = candidate.getUTCHours() * 60 + candidate.getUTCMinutes();
+    const inWindow = config.pickupWindows.some(
+      (window) =>
+        window.weekday === isoWeekday &&
+        minutes >= minutesOfDay(window.from) &&
+        minutes <= minutesOfDay(window.to),
+    );
+    if (!inWindow) continue;
+
+    const year = candidate.getUTCFullYear();
+    const month = pad(candidate.getUTCMonth() + 1);
+    const day = pad(candidate.getUTCDate());
+    const hour = pad(candidate.getUTCHours());
+    const minute = pad(candidate.getUTCMinutes());
+    const dateKey = `${year}-${month}-${day}`;
+    const time = `${hour}:${minute}`;
+    const value = `${dateKey}T${time}`;
+
+    let group = byDate.get(dateKey);
+    if (!group) {
+      const shortDate = `${day}.${month}.`;
+      const dateLabel = `${weekdayShortName(isoWeekday)}, ${shortDate}`;
+      const shortLabel =
+        dateKey === todayKey
+          ? "Heute"
+          : dateKey === tomorrowKey
+            ? "Morgen"
+            : weekdayName(isoWeekday);
+      group = {
+        dateKey,
+        shortLabel,
+        dateLabel:
+          dateKey === todayKey || dateKey === tomorrowKey ? dateLabel : shortDate,
+        fullLabel: `${weekdayName(isoWeekday)}, ${day}.${month}.${year}`,
+        slots: [],
+      };
+      byDate.set(dateKey, group);
+    }
+    group.slots.push({ value, time });
+  }
+
+  return [...byDate.values()];
+}
+
+/**
+ * Formats a `YYYY-MM-DDTHH:MM` pickup string into a readable German label
+ * (e.g. "Montag, 02.11.2026 um 18:00 Uhr").
+ */
+export function formatPickupDisplay(value: string): string | null {
+  const match = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2})$/.exec(value.trim());
+  if (!match) return null;
+  const [year, month, day, hour, minute] = match.slice(1).map(Number);
+  const dt = new Date(Date.UTC(year, month - 1, day, hour, minute));
+  if (
+    dt.getUTCMonth() !== month - 1 ||
+    dt.getUTCDate() !== day ||
+    dt.getUTCHours() !== hour ||
+    dt.getUTCMinutes() !== minute
+  ) {
+    return null;
+  }
+  const isoWeekday = dt.getUTCDay() || 7;
+  const pad = (n: number) => String(n).padStart(2, "0");
+  return `${weekdayName(isoWeekday)}, ${pad(day)}.${pad(month)}.${year} um ${pad(hour)}:${pad(minute)} Uhr`;
 }
 
 /**

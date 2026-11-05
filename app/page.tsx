@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import type { ReactNode } from "react";
 import LocationSlider from "@/components/LocationSlider";
-import { BOOKING_URL, MAP_URL } from "@/lib/site";
+import { BOOKING_URL, GASTRONAUT_URL, MAP_URL } from "@/lib/site";
 
 export const metadata: Metadata = { title: "STARTSEITE | KÖNIGSWIRT" };
 
@@ -68,8 +69,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="restaurant" className="grid scroll-mt-[85px] px-[18px] pb-[63px] pt-[78px] lg:-scroll-mt-[165px] lg:h-[635px] lg:grid-cols-2 lg:px-0 lg:pb-0 lg:pt-[72px]">
-        <div className="lg:pl-[10%] lg:pr-[5%] lg:pt-[70px]">
+      <section id="restaurant" className="grid scroll-mt-[85px] px-[18px] pb-[63px] pt-[78px] lg:-scroll-mt-[165px] lg:min-h-[635px] lg:grid-cols-2 lg:px-0 lg:pb-12 lg:pt-[72px]">
+        <div className="lg:pl-[10%] lg:pr-[5%] lg:pt-[56px]">
           <SectionText title="Königsstube">
             <p>
               Zwischen Kirche, Maibaum und Bergen erstreckt sich eine 300 Jahre alte Geschichte, die von uriger Gemütlichkeit und tief verwurzelten Traditionen geprägt ist. In dieser malerischen Kulisse lädt unsere Küche dazu ein, die regionalen Schätze und saisonalen Köstlichkeiten zu entdecken.
@@ -78,8 +79,24 @@ export default function Home() {
               Nur das Beste kommt bei uns auf den Tisch! Wir legen großen Wert darauf, unsere Zutaten von lokalen Lieferanten zu beziehen, denen wir vertrauen und auf die wir uns verlassen können. In unserer Küche werden diese hochwertigen Produkte mit den Raffinessen der modernen Kochkunst verfeinert und veredelt, um Ihnen ein unvergleichliches Geschmackserlebnis zu bieten.
             </p>
           </SectionText>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <Link
+              href="/menus"
+              className="inline-flex h-10 items-center justify-center rounded-full bg-wine px-6 text-[13px] font-medium tracking-[0.03em] text-cream transition-colors hover:bg-wine-dark"
+            >
+              SPEISEKARTE & ABHOLUNG
+            </Link>
+            <a
+              href={GASTRONAUT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex h-10 items-center justify-center rounded-full border border-ink px-6 text-[13px] font-medium tracking-[0.03em] text-ink transition-colors hover:bg-ink hover:text-cream"
+            >
+              TISCH RESERVIEREN
+            </a>
+          </div>
         </div>
-        <div className="relative mt-[99px] h-[200px] lg:ml-[5%] lg:mt-[30px] lg:h-[472px] lg:w-[85%]">
+        <div className="relative mt-[64px] h-[240px] lg:ml-[5%] lg:mt-[30px] lg:h-[472px] lg:w-[85%]">
           <Image src="/images/koenigsstube.jpg" alt="Gedeckter Tisch in der Königsstube" fill sizes="(min-width: 1024px) 43vw, 90vw" className="object-cover object-[50%_51%]" />
         </div>
       </section>
@@ -111,8 +128,8 @@ export default function Home() {
       <Gallery images={galleries[0]} className="bg-white pb-[33px] pt-8 lg:box-content lg:pb-[45px] lg:pt-[45px]" />
       <Gallery images={galleries[1]} className="bg-white pb-[33px] lg:box-content" />
 
-      <section id="saal" className="grid scroll-mt-[85px] px-[18px] pb-[38px] pt-[47px] lg:h-[563px] lg:scroll-mt-[94px] lg:grid-cols-2 lg:p-0">
-        <div className="lg:px-[7.5%] lg:pt-[109px]">
+      <section id="saal" className="grid scroll-mt-[85px] px-[18px] pb-[38px] pt-[47px] lg:min-h-[563px] lg:scroll-mt-[94px] lg:grid-cols-2 lg:p-0 lg:pb-12">
+        <div className="lg:px-[7.5%] lg:pt-[90px]">
           <SectionText title="Saal mit Bühne">
             <p className="pr-2 lg:pr-0">
               Ob Hochzeiten, Tanzveranstaltungen, Firmenfeste, Vereinsjubiläen oder Versammlungen – wann immer Sie viele Gäste erwarten, sind Sie bei uns an der richtigen Adresse. Wir bieten Ihnen den perfekten Rahmen für jede Art von Feierlichkeit und sorgen dafür, dass Ihr Event unvergesslich wird.
@@ -121,18 +138,24 @@ export default function Home() {
               Von der stilvollen Dekoration bis hin zum exquisiten Catering können Sie all Ihre Wünsche bei uns individuell dazubuchen. Mit Platz für bis zu 170 Gäste garantieren wir Ihnen ausreichend Raum und besten Service, damit Sie und Ihre Gäste das Fest in vollen Zügen genießen können.
             </p>
           </SectionText>
+          <Link
+            href="/festsaal-mit-buehne"
+            className="mx-auto mt-8 flex h-[38px] w-[190px] items-center justify-center border border-ink text-[13px] text-ink transition-colors hover:bg-ink hover:text-cream"
+          >
+            FESTSAAL ANFRAGEN
+          </Link>
         </div>
-        <div className="relative mx-[2px] mt-[63px] h-[181px] lg:mx-0 lg:ml-[5%] lg:mt-[108px] lg:h-[397px] lg:w-[85%]">
+        <div className="relative mx-[2px] mt-[48px] h-[220px] lg:mx-0 lg:ml-[5%] lg:mt-[108px] lg:h-[397px] lg:w-[85%]">
           <Image src="/images/saal.jpg" alt="Festlich gedeckte Tische im Saal" fill sizes="(min-width: 1024px) 43vw, 90vw" className="object-cover" />
         </div>
       </section>
 
-      <section id="salettl" className="grid scroll-mt-[85px] lg:h-[562px] lg:scroll-mt-[94px] lg:grid-cols-2">
+      <section id="salettl" className="grid scroll-mt-[85px] lg:min-h-[562px] lg:scroll-mt-[94px] lg:grid-cols-2 lg:pb-12">
         <div className="relative mx-5 mt-5 h-[510px] lg:ml-[5%] lg:mr-[10%] lg:mt-[108px] lg:h-[397px]">
           <Image src="/images/salettl-desktop.jpg" alt="Das Salettl am Ufer der Geltnach" fill sizes="43vw" className="hidden object-cover lg:block" />
           <Image src="/images/salettl.jpg" alt="Das Salettl am Ufer der Geltnach" fill sizes="90vw" className="object-cover object-[50%_45%] lg:hidden" />
         </div>
-        <div className="mt-[17px] px-[18px] pb-[83px] lg:mt-0 lg:px-0 lg:pb-0 lg:pl-[5%] lg:pr-[10%] lg:pt-[109px]">
+        <div className="mt-[17px] px-[18px] pb-[83px] lg:mt-0 lg:px-0 lg:pb-0 lg:pl-[5%] lg:pr-[10%] lg:pt-[90px]">
           <SectionText title="Salettl">
             <p>
               Unser kleines Schmuckstück liegt idyllisch gleich hinter dem Haus, direkt am malerischen Ufer der Geltnach. Besonders Bräute lieben es, sich hier für einen besonderen Moment zu verstecken, während sie gespannt und voller Vorfreude auf die Befreiung durch ihre tapferen Gatten warten.
@@ -141,6 +164,12 @@ export default function Home() {
               Dieses charmante Plätzchen, das Ruhe und Romantik ausstrahlt, bietet den perfekten Rahmen für unvergessliche Augenblicke. Buchen Sie das wunderschöne Salettl gleich hier und freuen Sie sich auf einen unvergesslichen Abend in dieser einzigartigen Atmosphäre, der Ihnen und Ihren Gästen noch lange in Erinnerung bleiben wird.
             </p>
           </SectionText>
+          <Link
+            href="/salettl"
+            className="mx-auto mt-8 flex h-[38px] w-[190px] items-center justify-center border border-ink text-[13px] text-ink transition-colors hover:bg-ink hover:text-cream"
+          >
+            SALETTL ANFRAGEN
+          </Link>
         </div>
       </section>
 

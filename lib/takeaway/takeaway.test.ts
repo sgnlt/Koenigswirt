@@ -3,9 +3,16 @@ import menu from "@/content/menu.json";
 import { buildCatalog, type CatalogLine } from "./catalog";
 import { isOrderingOpen, takeawayConfig, type TakeawayConfig } from "./config";
 import { renderOrderEmail } from "./email";
+import { formatPickupWindowsSummary } from "./format";
 import { isRateLimited, recordAttempt } from "./rate-limit";
 import { filterMenuSections, type MenuSection } from "./search";
-import { suggestPickupTime, validateOrder, type RawOrder } from "./validate";
+import {
+  formatPickupDisplay,
+  getAvailablePickupDays,
+  suggestPickupTime,
+  validateOrder,
+  type RawOrder,
+} from "./validate";
 
 const config: TakeawayConfig = {
   orderableItemIds: ["carpaccio-nach-art-des-hauses", "rumpsteak-cafe-de-paris"],
@@ -245,5 +252,36 @@ describe("suggestPickupTime", () => {
     const suggested = suggestPickupTime(config, now);
     expect(suggested).toBe("2026-11-02T17:00");
     expect(run({ pickup: suggested }).ok).toBe(true);
+  });
+
+  it("computes available pickup days and 15-minute slots that all pass validation", () => {
+    const days = getAvailablePickupDays(config, now);
+    expect(days.length).toBeGreaterThan(0);
+    expect(days[0].dateKey).toBe("2026-11-02");
+    expect(days[0].shortLabel).toBe("Heute");
+    expect(days[0].slots[0]).toEqual({ value: "2026-11-02T17:00", time: "17:00" });
+    expect(days[0].slots[days[0].slots.length - 1]).toEqual({
+      value: "2026-11-02T21:00",
+      time: "21:00",
+    });
+    for (const slot of days[0].slots) {
+      expect(run({ pickup: slot.value }).ok).toBe(true);
+    }
+  });
+
+  it("formats pickup windows summary and selected pickup display", () => {
+    expect(formatPickupWindowsSummary(takeawayConfig.pickupWindows)).toBe(
+      "Täglich 11:30–21:00 Uhr",
+    );
+    expect(
+      formatPickupWindowsSummary([
+        { weekday: 1, from: "17:00", to: "21:00" },
+        { weekday: 2, from: "17:00", to: "21:00" },
+        { weekday: 6, from: "11:30", to: "21:00" },
+      ]),
+    ).toBe("Montag–Dienstag 17:00–21:00 Uhr, Samstag 11:30–21:00 Uhr");
+    expect(formatPickupDisplay("2026-11-02T18:00")).toBe(
+      "Montag, 02.11.2026 um 18:00 Uhr",
+    );
   });
 });
