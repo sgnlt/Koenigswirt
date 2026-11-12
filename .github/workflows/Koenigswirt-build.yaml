@@ -37,8 +37,9 @@ jobs:
           CI: true
           SITE_URL: ${{ inputs.site-url }}
         run: |
-          npm install --legacy-peer-deps.
-          npm run build
+          npm install -g pnpm
+          pnpm install
+          pnpm build
 
 # Please do not touch the following action
       - name: Store deployment content
