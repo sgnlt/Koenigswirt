@@ -1398,3 +1398,601 @@
      "lines": [
       [
        "Meeresfrüchte-Mix | surimi | Avocado | Mayo | Schnittlauch | Tobiko"
+      ],
+      [
+       "15,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1550
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "CRUNCHY ROLLS (6 Stück)",
+   "items": [
+    {
+     "id": "86-sake",
+     "name": "86. SAKE",
+     "lines": [
+      [
+       "Lachs | Avocado | Mayo | Spezial Sauce (D, C, F, A, S)"
+      ],
+      [
+       "9,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 900
+      }
+     ]
+    },
+    {
+     "id": "87-maguro",
+     "name": "87. MAGURO",
+     "lines": [
+      [
+       "Thunfisch | Avocado | Mayo | Spezial Sauce (D, C, F, A, S)"
+      ],
+      [
+       "9,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 900
+      }
+     ]
+    },
+    {
+     "id": "88-kani",
+     "name": "88. KANI",
+     "lines": [
+      [
+       "Krabbe Imitat | Avocado | Mayo | Spezial Sauce (B, C, F, A, S)"
+      ],
+      [
+       "8,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 840
+      }
+     ]
+    },
+    {
+     "id": "89-tamago",
+     "name": "89. TAMAGO",
+     "lines": [
+      [
+       "Omelette | Avocado | Spezial Sauce (C, A, S)"
+      ],
+      [
+       "8,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 820
+      }
+     ]
+    },
+    {
+     "id": "90-kanpyo",
+     "name": "90. KANPYO",
+     "lines": [
+      [
+       "Kürbis | Avocado | Spezial Sauce (F, A, S)"
+      ],
+      [
+       "8,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 840
+      }
+     ]
+    },
+    {
+     "id": "91-ebi",
+     "name": "91. EBI",
+     "lines": [
+      [
+       "Garnelen | Avocado | Gurke | Mayo (B, C, F, A, S)"
+      ],
+      [
+       "9,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 900
+      }
+     ]
+    },
+    {
+     "id": "92-oshinko",
+     "name": "92. OSHINKO",
+     "lines": [
+      [
+       "Rettich | Gurke | Spezial Sauce (F, A, S)"
+      ],
+      [
+       "9,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 900
+      }
+     ]
+    },
+    {
+     "id": "93-tori",
+     "name": "93. tori",
+     "lines": [
+      [
+       "Knusprige hühnerbrust | Avocado | Mayo | Spezial Sauce"
+      ],
+      [
+       "0,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 0
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Futo ROLLS (6 riesige Stücke)",
+   "items": [
+    {
+     "id": "94-kaisen-futo",
+     "name": "94. Kaisen futo",
+     "lines": [
+      [
+       "Meeresfrüchte-Mix | gurke | Avocado | Mayo | spezialsoße"
+      ],
+      [
+       "11,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1190
+      }
+     ]
+    },
+    {
+     "id": "95-vegan-futo",
+     "name": "95. Vegan futo",
+     "lines": [
+      [
+       "rettich | Avocado | Sesam | Gurke | mango-soße | spezialsoße"
+      ],
+      [
+       "6,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 690
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SUSHI DONBURI (BOWL) - Rice Bowl mit salat mix",
+   "items": [
+    {
+     "id": "96-sake-don",
+     "name": "96. SAKE DON",
+     "lines": [
+      [
+       "Lachs | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, C, F, S)"
+      ],
+      [
+       "15,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1550
+      }
+     ]
+    },
+    {
+     "id": "97-tekka-don",
+     "name": "97. TEKKA DON",
+     "lines": [
+      [
+       "Thunfisch | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, C, F, S)"
+      ],
+      [
+       "17,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1750
+      }
+     ]
+    },
+    {
+     "id": "98-hiyashi-don",
+     "name": "98. hiyashi DON",
+     "lines": [
+      [
+       "Lachs | dorade | Thunfisch | Garnelen | surimi | tobiko | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, B, C, F, S)"
+      ],
+      [
+       "19,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1990
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SASHIMI MIX - rohem Fisch – meisterhaft filetiert",
+   "items": [
+    {
+     "id": "99-sake-sashimi",
+     "name": "99. Sake sashimi",
+     "lines": [
+      [
+       "6 St. Lachs"
+      ],
+      [
+       "10,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
+      }
+     ]
+    },
+    {
+     "id": "100-maguro-sashimi",
+     "name": "100. Maguro sashimi",
+     "lines": [
+      [
+       "6 St. Thunfisch"
+      ],
+      [
+       "12,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1290
+      }
+     ]
+    },
+    {
+     "id": "101-gruenten",
+     "name": "101. Grünten",
+     "lines": [
+      [
+       "4 St. dorade | 4 St. Thunfisch (D)"
+      ],
+      [
+       "14,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1490
+      }
+     ]
+    },
+    {
+     "id": "102-nebelhorn",
+     "name": "102. Nebelhorn",
+     "lines": [
+      [
+       "5 St. Lachs | 5 St. Thunfisch (D)"
+      ],
+      [
+       "19,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1990
+      }
+     ]
+    },
+    {
+     "id": "103-hochvogel",
+     "name": "103. Hochvogel",
+     "lines": [
+      [
+       "5 St. Lachs | 5 St. Thunfisch | 4 St. Ebi | 5 St. Unagi | 5 St. dorade (D, B, F, S)"
+      ],
+      [
+       "34,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 3490
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SUSHI SET (A, B, C, D, F, N, S)",
+   "items": [
+    {
+     "id": "104-schloss-sanssouci",
+     "name": "104. Schloss Sanssouci (für 1 pers.)",
+     "lines": [
+      [
+       "5 Nigiri (lachs, thunfisch, garnele, dorade & aal) | 8 St. sake Inside Out | 6 St. sake Crunchy"
+      ],
+      [
+       "28,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2890
+      }
+     ]
+    },
+    {
+     "id": "105-schloss-hohenschwangau",
+     "name": "105. Schloss Hohenschwangau (für 2 pers.)",
+     "lines": [
+      [
+       "6 Nigiri (lachs, thunfisch & dorade) | 8 St. Inside Out | 12 St. Crunchy"
+      ],
+      [
+       "36,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 3690
+      }
+     ]
+    },
+    {
+     "id": "106-schloss-neuschwanstein",
+     "name": "106. Schloss Neuschwanstein (für 3 pers.)",
+     "lines": [
+      [
+       "8 Nigiri (lachs, thunfisch, garnele & dorade) | 8 St. Inside Out | 8 St. Inside Out Special | 12 St. Crunchy"
+      ],
+      [
+       "49,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 4990
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Dessert",
+   "items": [
+    {
+     "id": "flambierter-cheesecake-schokoladeneis-und-frische-fruechte",
+     "name": "Flambierter Cheesecake, Schokoladeneis und frische Früchte",
+     "lines": [
+      [
+       "10,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
+      }
+     ]
+    },
+    {
+     "id": "schokoladen-souffle-mit-vanilleeis",
+     "name": "Schokoladen Soufflé mit Vanilleeis",
+     "lines": [
+      [
+       "8,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 850
+      }
+     ]
+    },
+    {
+     "id": "apfelkuechlein-mit-vanilleeis-und-fruechten",
+     "name": "Apfelküchlein mit Vanilleeis und Früchten",
+     "lines": [
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
+      }
+     ]
+    },
+    {
+     "id": "eis-palatschinken-mit-vanilleeis",
+     "name": "Eis Palatschinken mit Vanilleeis",
+     "lines": [
+      [
+       "Schokoladen Soße & frischen Beeren"
+      ],
+      [
+       "7,80 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 780
+      }
+     ]
+    },
+    {
+     "id": "afogato",
+     "name": "Afogato",
+     "lines": [
+      [
+       "Vanilleeis, Doppelter Espresso"
+      ],
+      [
+       "5,80 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 580
+      }
+     ]
+    },
+    {
+     "id": "gemischtes-eis",
+     "name": "Gemischtes Eis",
+     "lines": [
+      [
+       "Vanille, Schoko, Erdbeere",
+       "5,20 €",
+       "mit Sahne",
+       "6,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "vanille-schoko-erdbeere",
+       "label": "Vanille, Schoko, Erdbeere",
+       "priceCents": 520
+      },
+      {
+       "id": "mit-sahne",
+       "label": "mit Sahne",
+       "priceCents": 620
+      }
+     ]
+    },
+    {
+     "id": "1-grosse-kugel-eis",
+     "name": "1 große Kugel Eis",
+     "lines": [
+      [
+       "-",
+       "2,40 €",
+       "mit Sahne",
+       "3,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "ohne-sahne",
+       "label": "ohne Sahne",
+       "priceCents": 240
+      },
+      {
+       "id": "mit-sahne",
+       "label": "mit Sahne",
+       "priceCents": 340
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "tail": [
+  {
+   "text": "An Guadn!",
+   "size": "36px",
+   "y": 4961
+  },
+  {
+   "text": "Wünscht euch das Königswirt Team",
+   "size": "18px",
+   "y": 5020
+  },
+  {
+   "img": "/images/og.jpg",
+   "alt": "KO╠êW_LogoGoldStep11_FIN_1004168.jpg",
+   "w": 327,
+   "h": 218
+  }
+ ]
+}
