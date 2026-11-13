@@ -705,7 +705,8 @@
    ]
   },
   {
-   "title": "NIGIRI (2 Stück)",
+   "title": "NIGIRI",
+   "subtitle":(2 Stück)",
    "items": [
     {
      "id": "50-sake",
@@ -862,7 +863,9 @@
    ]
   },
   {
-   "title": "NIGIRI ABURI - Geflämmtes Nigiri (2 Stück)",
+   "title": "NIGIRI ABURI",
+   "subtitle": "Geflämmtes Nigiri (2 Stück)",
+   "items":
    "items": [
     {
      "id": "58-sake-aburi",
@@ -943,7 +946,8 @@
    ]
   },
   {
-   "title": "HOSO MAKI - KLEINE SUSHI ROLLE (6 Stück)",
+   "title": "HOSO MAKI",
+   "subtitle": " KLEINE SUSHI ROLLE (6 Stück)",
    "items": [
     {
      "id": "62-sake",
@@ -1138,7 +1142,8 @@
    ]
   },
   {
-   "title": "INSIDE OUT (8 Stück)",
+   "title": "INSIDE OUT",
+   "subtitle": " (8 Stück)",
    "items": [
     {
      "id": "72-sake-avocado",
@@ -1205,7 +1210,7 @@
        "Knusprige Garnelen | Mayo | Gurke | Tobiko (B, C, F, N, S)"
       ],
       [
-       "9,50 €"
+       "11,90 €"
       ]
      ],
      "variants": [
@@ -1276,7 +1281,8 @@
    ]
   },
   {
-   "title": "INSIDE OUT SPECIAL (8 Stücke)",
+   "title": "INSIDE OUT SPECIAL",
+   "subtitle": "(8 Stücke)",
    "items": [
     {
      "id": "79-special-sake",
@@ -1414,7 +1420,8 @@
    ]
   },
   {
-   "title": "CRUNCHY ROLLS (6 Stück)",
+   "title": "CRUNCHY ROLLS",
+   "subtitle": "  (6 Stück)",
    "items": [
     {
      "id": "86-sake",
@@ -1571,7 +1578,8 @@
    ]
   },
   {
-   "title": "Futo ROLLS (6 riesige Stücke)",
+   "title": "FUTO ROLLS",
+   "subtitle": "  (6 riesige Stücke)",
    "items": [
     {
      "id": "94-kaisen-futo",
@@ -1614,7 +1622,8 @@
    ]
   },
   {
-   "title": "SUSHI DONBURI (BOWL) - Rice Bowl mit salat mix",
+   "title": "SUSHI DONBURI (BOWL)",
+   "subtitle": " Rice Bowl mit Salat Mix",
    "items": [
     {
      "id": "96-sake-don",
@@ -1676,7 +1685,8 @@
    ]
   },
   {
-   "title": "SASHIMI MIX - rohem Fisch – meisterhaft filetiert",
+   "title": "SASHIMI MIX",
+   "subtitle": " rohem Fisch – meisterhaft filetiert",
    "items": [
     {
      "id": "99-sake-sashimi",
@@ -1776,7 +1786,8 @@
    ]
   },
   {
-   "title": "SUSHI SET (A, B, C, D, F, N, S)",
+   "title": "SUSHI SET",
+   "subtitle": "  (A, B, C, D, F, N, S)",
    "items": [
     {
      "id": "104-schloss-sanssouci",
