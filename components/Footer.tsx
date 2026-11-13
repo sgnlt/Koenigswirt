@@ -42,6 +42,7 @@ export default function Footer() {
               <p className="font-semibold text-ink">Königswirt · Historischer Landgasthof</p>
               <p>Schongauer Str. 13</p>
               <p>87616 Marktoberdorf / Bertoldshofen</p>
+              <p>Öffnungszeiten : Täglich von 11:00 bis 14:30 und von 16:30 bis 22:00 </p>
               <p className="mt-4">
                 Tel.:{" "}
                 <a href={PHONE_HREF} className="underline hover:text-wine">
