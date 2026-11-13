@@ -349,14 +349,22 @@ export default function MenuExplorer({
               aria-labelledby={`section-${section.title}`}
               className="scroll-mt-44"
             >
-              <div className="mb-4 flex items-baseline justify-between border-b border-border pb-2.5">
-                <h2
-                  id={`section-${section.title}`}
-                  className="font-playfair text-2xl font-bold text-ink sm:text-[28px]"
-                >
-                  {section.title}
-                </h2>
-                <span className="text-xs font-medium text-muted tabular-nums">
+              <div className="mb-4 flex items-baseline justify-between gap-4 border-b border-border pb-2.5">
+                <div>
+                  <h2
+                    id={`section-${section.title}`}
+                    className="font-playfair text-2xl font-bold text-ink sm:text-[28px]"
+                  >
+                    {section.title}
+                  </h2>
+                  {/* Hiển thị phần phụ đề nếu có trong JSON */}
+                  {(section as any).subtitle && (
+                    <p className="mt-1.5 text-sm font-normal text-muted">
+                      {(section as any).subtitle}
+                    </p>
+                  )}
+                </div>
+                <span className="shrink-0 text-xs font-medium text-muted tabular-nums">
                   {section.items.length === 1
                     ? "1 Gericht"
                     : `${section.items.length} Gerichte`}
