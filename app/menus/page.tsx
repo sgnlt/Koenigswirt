@@ -42,7 +42,7 @@ export default function MenusPage() {
             <div className="inline-flex items-center gap-2 rounded-full border border-wine/25 bg-cream px-3.5 py-1.5 text-ink shadow-2xs sm:px-4 sm:py-2">
               <span className="size-2 shrink-0 rounded-full bg-forest" aria-hidden="true" />
               <span>
-                <strong>Abholservice:</strong> {pickupSummary} ({takeawayConfig.leadTimeMinutes} Min. Vorlauf)
+                <strong>Abholservice:</strong> Täglich: siehe Öffnungszeiten ({takeawayConfig.leadTimeMinutes} Min. Vorlauf)
               </span>
             </div>
           )}
