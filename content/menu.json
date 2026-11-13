@@ -22,11 +22,30 @@
    "title": "Vorspeisen",
    "items": [
     {
-     "id": "carpaccio-nach-art-des-hauses",
-     "name": "Carpaccio nach Art des Hauses",
+     "id": "gebackene-ziegenkaese-baellchen",
+     "name": "Gebackene Ziegenkäse-Bällchen",
      "lines": [
       [
-       "Parmesan und gebratene Pilze, Zitrone und Kräuterpesto"
+       "Knuspriger Ziegenkäse | Yuzu-Honig | gerösteter Sesam (G, C, A)"
+      ],
+      [
+       "9,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 990
+      }
+     ]
+    },
+    {
+     "id": "rinder-tatar-miso-mayo",
+     "name": "Rinder-Tatar | Miso-Mayo",
+     "lines": [
+      [
+       "Hüftfilet | Miso-Mayonnaise | Wachtelei | Sesam-Cracker (C, F, M, S)"
       ],
       [
        "15,90 €"
@@ -41,73 +60,30 @@
      ]
     },
     {
-     "id": "gebackener-mozzarella",
-     "name": "Gebackener Mozzarella",
+     "id": "ebi-tempura-sommerrollen-reisnudeln",
+     "name": "Ebi-Tempura Sommerrollen | Reisnudeln",
      "lines": [
       [
-       "Fleischtomaten und Salat klassisch"
+       "Knusprige Garnelen in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
       ],
       [
-       "14,90 €"
+       "9,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1490
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "title": "Salate",
-   "items": [
-    {
-     "id": "kleiner-vitaminsalat",
-     "name": "Kleiner Vitaminsalat",
-     "lines": [
-      [
-       "mit Kresse, Croûtons"
-      ],
-      [
-       "4,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 490
+       "priceCents": 990
       }
      ]
     },
     {
-     "id": "super-food-salat",
-     "name": "Super Food Salat",
+     "id": "sake-tempura-sommerrollen-reisnudeln",
+     "name": "Sake-Tempura Sommerrollen | Reisnudeln",
      "lines": [
       [
-       "Blattsalate, gebackenes Landei, frische Früchte, Parmesan, geröstete Kerne, Croûtons"
-      ],
-      [
-       "13,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 1390
-      }
-     ]
-    },
-    {
-     "id": "salate-wahlweise-mit",
-     "name": "wahlweise mit",
-     "lines": [
-      [
-       "Ziegenkäse vom Grill & Blütenhonig\ngegrillten Tofu Asian Style, Sesam\nRindfleischstreifen vom Grill\nHähnchenbrustfiletstreifen vom Grill\nje /"
+       "Knusprige Lachs in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
       ],
       [
        "8,90 €"
@@ -115,38 +91,18 @@
      ],
      "variants": [
       {
-       "id": "ziegenkaese-vom-grill-bluetenhonig",
-       "label": "Ziegenkäse vom Grill & Blütenhonig",
-       "priceCents": 890
-      },
-      {
-       "id": "gegrillter-tofu-asian-style-sesam",
-       "label": "Gegrillter Tofu Asian Style, Sesam",
-       "priceCents": 890
-      },
-      {
-       "id": "rindfleischstreifen-vom-grill",
-       "label": "Rindfleischstreifen vom Grill",
-       "priceCents": 890
-      },
-      {
-       "id": "haehnchenbrustfiletstreifen-vom-grill",
-       "label": "Hähnchenbrustfiletstreifen vom Grill",
+       "id": "standard",
+       "label": null,
        "priceCents": 890
       }
      ]
-    }
-   ]
-  },
-  {
-   "title": "Suppen",
-   "items": [
+    },
     {
-     "id": "hausgemachte-rinderkraftbruehe",
-     "name": "Hausgemachte Rinderkraftbrühe",
+     "id": "nem",
+     "name": "Nem",
      "lines": [
       [
-       "Gemüse & Schnittlauch & Flädle"
+       "Knusprige Frühlingsrollen | Gemischtes Hackfleisch"
       ],
       [
        "5,90 €"
@@ -161,51 +117,316 @@
      ]
     },
     {
-     "id": "suppen-wahlweise",
-     "name": "Wahlweise",
+     "id": "gyoza",
+     "name": "Gyoza",
      "lines": [
       [
-       "Brät Knödel, / Leberknödel, / Grießnockerl"
+       "Knusprige Teigtaschen Wahlweise mit Hühnchen, Garnele oder Tofu (A, C, B, F, L)"
       ],
       [
-       "2,90 €"
+       "5,60 €"
       ]
      ],
      "variants": [
       {
-       "id": "braet-knoedel",
-       "label": "Brät Knödel",
-       "priceCents": 290
-      },
+       "id": "standard",
+       "label": null,
+       "priceCents": 560
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Salate",
+   "items": [
+    {
+     "id": "tomate-burrata-thai-basilikum",
+     "name": "Tomate | Burrata | Thai Basilikum",
+     "lines": [
+      [
+       "Rispentomaten | cremige Burrata | Thai Basilikum (F, M, S)"
+      ],
+      [
+       "6,90 €"
+      ]
+     ],
+     "variants": [
       {
-       "id": "leberknoedel",
-       "label": "Leberknödel",
-       "priceCents": 290
-      },
-      {
-       "id": "griessnockerl",
-       "label": "Grießnockerl",
-       "priceCents": 290
+       "id": "standard",
+       "label": null,
+       "priceCents": 690
       }
      ]
     },
     {
-     "id": "asiatische-karotten-kokossuppe",
-     "name": "Asiatische Karotten Kokossuppe",
+     "id": "gemischter-saison-salat",
+     "name": "Gemischter Saison Salat",
      "lines": [
       [
-       "Sesam, Tofu -Spieß"
+       "Ponzu-Dressing | Tofu-Spieße (G)"
+      ],
+      [
+       "6,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 690
+      }
+     ]
+    },
+    {
+     "id": "wakame-algen-salat-geroesteter-sesam",
+     "name": "Wakame-Algen-Salat | Gerösteter Sesam",
+     "lines": [
+      [
+       "Seealgen | Sesamöl | Helle Sojasauce | Reisessig | Mirin"
+      ],
+      [
+       "5,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 590
+      }
+     ]
+    },
+    {
+     "id": "sake-avocado-salat-tobiko",
+     "name": "Sake-Avocado-Salat | Tobiko",
+     "lines": [
+      [
+       "Frischer Lachs | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce"
+      ],
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
+      }
+     ]
+    },
+    {
+     "id": "ebi-avocado-salat-tobiko",
+     "name": "Ebi-Avocado-Salat | Tobiko",
+     "lines": [
+      [
+       "Garnele | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce"
       ],
       [
        "8,50 €"
       ]
      ],
-     "vegan": true,
      "variants": [
       {
        "id": "standard",
        "label": null,
        "priceCents": 850
+      }
+     ]
+    },
+    {
+     "id": "sake-tempura-salat",
+     "name": "Sake-Tempura-Salat",
+     "lines": [
+      [
+       "Knusprige Lachs | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce"
+      ],
+      [
+       "8,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 890
+      }
+     ]
+    },
+    {
+     "id": "ebi-tempura-salat",
+     "name": "Ebi-Tempura-Salat",
+     "lines": [
+      [
+       "Knusprige Garnelen | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce"
+      ],
+      [
+       "9,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 990
+      }
+     ]
+    },
+    {
+     "id": "edamame",
+     "name": "Edamame",
+     "lines": [
+      [
+       "Gedämpfte Sojabohnen in der Schote | Meersalz (F)"
+      ],
+      [
+       "4,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 490
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Suppen",
+   "items": [
+    {
+     "id": "blumenkohlsuppe",
+     "name": "Blumenkohlsuppe",
+     "lines": [
+      [
+       "Blumenkohl | Kokosmilch | Zitronengras (F, L)"
+      ],
+      [
+       "6,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 690
+      }
+     ]
+    },
+    {
+     "id": "kuerbiscremesuppe",
+     "name": "Kürbiscremesuppe",
+     "lines": [
+      [
+       "Hokkaidokürbis | Butter | Muskatnuss"
+      ],
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
+      }
+     ]
+    },
+    {
+     "id": "misoshiru-suppe",
+     "name": "Misoshiru-Suppe",
+     "lines": [
+      [
+       "Tofu | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+      ],
+      [
+       "4,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 490
+      }
+     ]
+    },
+    {
+     "id": "misosake-suppe",
+     "name": "Misosake-Suppe",
+     "lines": [
+      [
+       "Frischer Lachs | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+      ],
+      [
+       "6,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 650
+      }
+     ]
+    },
+    {
+     "id": "misokaisen-suppe",
+     "name": "Misokaisen-Suppe",
+     "lines": [
+      [
+       "Meeresfrüchte-Mix | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+      ],
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
+      }
+     ]
+    },
+    {
+     "id": "tom-yum-goong-suppe",
+     "name": "Tom Yum Goong-Suppe | scharf-saure Garnelensuppe",
+     "lines": [
+      [
+       "Garnelen | Champignons | Tomaten | Zitronengras | Galgant | Limettenblätter | Koriander"
+      ],
+      [
+       "8,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 850
+      }
+     ]
+    },
+    {
+     "id": "tom-kha-gai-suppe",
+     "name": "Tom Kha Gai-Suppe | scharf-saure Hühnersuppe",
+     "lines": [
+      [
+       "Hühnerfleisch | Champignons | Kokosmilch | Zitronengras | Galgant | Limettenblätter | Koriander"
+      ],
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
       }
      ]
     }
