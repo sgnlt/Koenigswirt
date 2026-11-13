@@ -705,261 +705,696 @@
    ]
   },
   {
-   "title": "Brotzeiten",
+   "title": "NIGIRI (2 Stück)",
    "items": [
     {
-     "id": "gulaschsuppe-nach-art-des-hauses",
-     "name": "Gulaschsuppe nach Art des Hauses",
+     "id": "50-sake",
+     "name": "50. SAKE",
      "lines": [
       [
-       "mit Brot"
+       "Lachs (D)"
       ],
       [
-       "11,50 €"
+       "4,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1150
+       "priceCents": 490
       }
      ]
     },
     {
-     "id": "allgaeuer-wurstsalat",
-     "name": "Allgäuer Wurstsalat",
+     "id": "51-maguro",
+     "name": "51. MAGURO",
      "lines": [
       [
-       "Zwiebelringe, Essiggurken, mit Brot"
+       "Thunfisch (D)"
       ],
       [
-       "9,90 €"
+       "5,40 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 990
+       "priceCents": 540
       }
      ]
     },
     {
-     "id": "schweizer-art-wurstsalat",
-     "name": "Schweizer Art Wurstsalat",
+     "id": "52-ebi",
+     "name": "52. EBI",
      "lines": [
       [
-       "Zwiebelringe , Essiggurken, Allgäuer Käse, mit Brot"
+       "Garnele (B)"
       ],
       [
-       "11,50 €"
+       "4,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1150
+       "priceCents": 490
       }
      ]
     },
     {
-     "id": "allgaeuer-saurer-kaese",
-     "name": "Allgäuer saurer Käse",
+     "id": "53-unagi",
+     "name": "53. UNAGI",
      "lines": [
       [
-       "Zwiebeln und Bauernbrot"
+       "Aal (D, F, S)"
       ],
       [
-       "10,90 €"
+       "5,40 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1090
+       "priceCents": 540
       }
      ]
     },
     {
-     "id": "currywurst-mit-hausgemachten-spezialsosse",
-     "name": "Currywurst mit hausgemachten Spezialsoße",
+     "id": "54-avocado",
+     "name": "54. AVOCADO",
      "lines": [
       [
-       "und feine Pommes"
+       "Avocado"
       ],
       [
-       "12,90 €"
+       "4,20 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1290
+       "priceCents": 420
+      }
+     ]
+    },
+    {
+     "id": "55-tamago",
+     "name": "55. TAMAGO",
+     "lines": [
+      [
+       "Ei (C)"
+      ],
+      [
+       "4,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 420
+      }
+     ]
+    },
+    {
+     "id": "56-inari",
+     "name": "56. INARI",
+     "lines": [
+      [
+       "Tofu (F, A, S)"
+      ],
+      [
+       "4,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 420
+      }
+     ]
+    },
+    {
+     "id": "57-tai",
+     "name": "57. TAI",
+     "lines": [
+      [
+       "DORADE ()"
+      ],
+      [
+       "5,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 540
       }
      ]
     }
    ]
   },
   {
-   "title": "Dessert",
+   "title": "NIGIRI ABURI - Geflämmtes Nigiri (2 Stück)",
    "items": [
     {
-     "id": "flambierter-cheesecake-schokoladeneis-und-frische-fruechte",
-     "name": "Flambierter Cheesecake, Schokoladeneis und frische Früchte",
+     "id": "58-sake-aburi",
+     "name": "58. SAKE ABURI",
      "lines": [
       [
-       "10,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 1090
-      }
-     ]
-    },
-    {
-     "id": "schokoladen-souffle-mit-vanilleeis",
-     "name": "Schokoladen Soufflé mit Vanilleeis",
-     "lines": [
-      [
-       "8,50 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 850
-      }
-     ]
-    },
-    {
-     "id": "apfelkuechlein-mit-vanilleeis-und-fruechten",
-     "name": "Apfelküchlein mit Vanilleeis und Früchten",
-     "lines": [
-      [
-       "7,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 790
-      }
-     ]
-    },
-    {
-     "id": "eis-palatschinken-mit-vanilleeis",
-     "name": "Eis Palatschinken mit Vanilleeis",
-     "lines": [
-      [
-       "Schokoladen Soße & frischen Beeren"
+       "Lachs, MAYO, SOßE, TOBIKO ()"
       ],
       [
-       "7,80 €"
+       "5,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 780
+       "priceCents": 590
       }
      ]
     },
     {
-     "id": "afogato",
-     "name": "Afogato",
+     "id": "59-maguro-aburi",
+     "name": "59. MAGURO ABURI",
      "lines": [
       [
-       "Vanilleeis, Doppelter Espresso"
+       "Thunfisch, MAYO, SOßE, TOBIKO ()"
       ],
       [
-       "5,80 €"
+       "6,40 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 580
+       "priceCents": 640
       }
      ]
     },
     {
-     "id": "gemischtes-eis",
-     "name": "Gemischtes Eis",
+     "id": "60-ebi-aburi",
+     "name": "60. EBI",
      "lines": [
       [
-       "Vanille, Schoko, Erdbeere",
-       "5,20 €",
-       "mit Sahne",
-       "6,20 €"
+       "Garnele, MAYO, SOßE, TOBIKO ()"
+      ],
+      [
+       "5,90 €"
       ]
      ],
      "variants": [
       {
-       "id": "vanille-schoko-erdbeere",
-       "label": "Vanille, Schoko, Erdbeere",
+       "id": "standard",
+       "label": null,
+       "priceCents": 590
+      }
+     ]
+    },
+    {
+     "id": "61-toro-sake-aburi",
+     "name": "61. TORO SAKE ABURI",
+     "lines": [
+      [
+       "LachHAUT, MAYO, SOßE, TOBIKO ()"
+      ],
+      [
+       "5,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 540
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "HOSO MAKI - KLEINE SUSHI ROLLE (6 Stück)",
+   "items": [
+    {
+     "id": "62-sake",
+     "name": "62. SAKE",
+     "lines": [
+      [
+       "Lachs (D)"
+      ],
+      [
+       "5,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
        "priceCents": 520
-      },
-      {
-       "id": "mit-sahne",
-       "label": "mit Sahne",
-       "priceCents": 620
       }
      ]
     },
     {
-     "id": "1-grosse-kugel-eis",
-     "name": "1 große Kugel Eis",
+     "id": "63-tekka",
+     "name": "63. TEKKA",
      "lines": [
       [
-       "-",
-       "2,40 €",
-       "mit Sahne",
-       "3,40 €"
+       "Thunfisch (D)"
+      ],
+      [
+       "5,70 €"
       ]
      ],
      "variants": [
       {
-       "id": "ohne-sahne",
-       "label": "ohne Sahne",
-       "priceCents": 240
-      },
+       "id": "standard",
+       "label": null,
+       "priceCents": 570
+      }
+     ]
+    },
+    {
+     "id": "64-ebi",
+     "name": "64. EBI",
+     "lines": [
+      [
+       "Garnele, MAYO (B)"
+      ],
+      [
+       "5,50 €"
+      ]
+     ],
+     "variants": [
       {
-       "id": "mit-sahne",
-       "label": "mit Sahne",
-       "priceCents": 340
+       "id": "standard",
+       "label": null,
+       "priceCents": 550
+      }
+     ]
+    },
+    {
+     "id": "65-kanpyo",
+     "name": "65. KANPYO",
+     "lines": [
+      [
+       "Kürbis"
+      ],
+      [
+       "4,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 420
+      }
+     ]
+    },
+    {
+     "id": "66-unakyu",
+     "name": "66. UNAKYU",
+     "lines": [
+      [
+       "Aal, GURKE (D, F, S)"
+      ],
+      [
+       "5,70 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 570
+      }
+     ]
+    },
+    {
+     "id": "67-avocado",
+     "name": "67. AVOCADO",
+     "lines": [
+      [
+       "Avocado"
+      ],
+      [
+       "4,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 420
+      }
+     ]
+    },
+    {
+     "id": "68-tamago",
+     "name": "68. TAMAGO",
+     "lines": [
+      [
+       "Ei (C)"
+      ],
+      [
+       "4,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 440
+      }
+     ]
+    },
+    {
+     "id": "69-kappa",
+     "name": "69. KAPPA",
+     "lines": [
+      [
+       "Gurke"
+      ],
+      [
+       "4,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 400
+      }
+     ]
+    },
+    {
+     "id": "70-oshinko",
+     "name": "70. OSHINKO",
+     "lines": [
+      [
+       "eingelegter gelber Rettich (S)"
+      ],
+      [
+       "4,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 440
+      }
+     ]
+    },
+    {
+     "id": "71-surimi-avocado",
+     "name": "71. SURIMI AVOCADO",
+     "lines": [
+      [
+       "SURIMI, AVOCADO ()"
+      ],
+      [
+       "4,40 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 440
       }
      ]
     }
    ]
-  }
- ],
- "tail": [
-  {
-   "text": "An Guadn!",
-   "size": "36px",
-   "y": 4961
   },
   {
-   "text": "Wünscht euch das Königswirt Team",
-   "size": "18px",
-   "y": 5020
+   "title": "INSIDE OUT (8 Stück)",
+   "items": [
+    {
+     "id": "72-sake-avocado",
+     "name": "72. SAKE AVOCADO",
+     "lines": [
+      [
+       "Lachs | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "8,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 890
+      }
+     ]
+    },
+    {
+     "id": "73-maguro-avocado",
+     "name": "73. MAGURO AVOCADO",
+     "lines": [
+      [
+       "Thunfisch | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "9,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 950
+      }
+     ]
+    },
+    {
+     "id": "74-ebi-avocado",
+     "name": "74. EBI AVOCADO",
+     "lines": [
+      [
+       "Garnele | Avocado | Mayo | Gurke | Tobiko (B, C, F, N, S)"
+      ],
+      [
+       "9,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 950
+      }
+     ]
+    },
+    {
+     "id": "75-ebi-tempura",
+     "name": "75. EBI tempura",
+     "lines": [
+      [
+       "Knusprige Garnelen | Mayo | Gurke | Tobiko (B, C, F, N, S)"
+      ],
+      [
+       "9,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 950
+      }
+     ]
+    },
+    {
+     "id": "76-tamago-avocado",
+     "name": "76. TAMAGO AVOCADO",
+     "lines": [
+      [
+       "Omelette | Avocado | Sesam | Gurke (C, N, S)"
+      ],
+      [
+       "8,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 820
+      }
+     ]
+    },
+    {
+     "id": "77-kanpyo-avocado",
+     "name": "77. KANPYO AVOCADO",
+     "lines": [
+      [
+       "Kürbis | Avocado | Sesam | Gurke (F, N, S)"
+      ],
+      [
+       "8,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 820
+      }
+     ]
+    },
+    {
+     "id": "78-oshinko",
+     "name": "78. OSHINKO",
+     "lines": [
+      [
+       "rettich | Avocado | Sesam | Gurke (F, N, S)"
+      ],
+      [
+       "8,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 820
+      }
+     ]
+    }
+   ]
   },
   {
-   "img": "/images/og.jpg",
-   "alt": "KO╠êW_LogoGoldStep11_FIN_1004168.jpg",
-   "w": 327,
-   "h": 218
-  }
- ]
-}
+   "title": "INSIDE OUT SPECIAL (8 Stücke)",
+   "items": [
+    {
+     "id": "79-special-sake",
+     "name": "79. SPECIAL SAKE",
+     "lines": [
+      [
+       "Lachs on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "14,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1450
+      }
+     ]
+    },
+    {
+     "id": "80-special-sake-aburi",
+     "name": "80. SPECIAL SAKE ABURI",
+     "lines": [
+      [
+       "GeflämmteR Lachs on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "15,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1590
+      }
+     ]
+    },
+    {
+     "id": "81-volcano",
+     "name": "81. VOLCANO",
+     "lines": [
+      [
+       "Thunfisch on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "15,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1550
+      }
+     ]
+    },
+    {
+     "id": "82-volcano-aburi",
+     "name": "82. VOLCANO aburi",
+     "lines": [
+      [
+       "GeflämmteR Thunfisch on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
+      ],
+      [
+       "16,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1690
+      }
+     ]
+    },
+    {
+     "id": "83-dragon",
+     "name": "83. DRAGON",
+     "lines": [
+      [
+       "Aal on top | Knusprige Garnelen | Mayo | Gurke | Tobiko (D, B, C, F, N, S)"
+      ],
+      [
+       "15,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1550
+      }
+     ]
+    },
+    {
+     "id": "84-dragon-special",
+     "name": "84. Dragon special",
+     "lines": [
+      [
+       "Geflämmte Aal & LACHS on top | Knusprige Garnelen | Mayo | Gurke | Tobiko (D, B, C, F, N, S)"
+      ],
+      [
+       "17,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1790
+      }
+     ]
+    },
+    {
+     "id": "85-rainbow",
+     "name": "85. rainbow",
+     "lines": [
+      [
+       "Meeresfrüchte-Mix | surimi | Avocado | Mayo | Schnittlauch | Tobiko"
