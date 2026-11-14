@@ -40,8 +40,9 @@ export default function ReservierungPage() {
           </h1>
         </div>
         <p className="mt-2 text-sm text-muted sm:text-base">
-          Reservieren Sie Ihren Tisch in der historischen Königsstube (Schongauer Str. 13,
-          87616 Marktoberdorf). Wir bestätigen Ihre Anfrage persönlich per E-Mail.
+          Reservieren Sie Ihren Tisch in der historischen Königswirt (Schongauer Str. 13, 87616 Marktoberdorf).
+          **Unsere Eröffnung ist am 10.12.2026.** Reservierungen sind ab diesem Datum möglich. Wir freuen uns darauf, Sie bei uns begrüßen zu dürfen!
+          Wir bestätigen Ihre Reservierungsanfrage persönlich per E-Mail.
         </p>
       </header>
 
