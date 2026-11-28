@@ -19,119 +19,138 @@
  ],
  "sections": [
   {
-   "title": "Vorspeisen",
+   "title": "Suppen",
    "items": [
     {
-     "id": "gebackene-ziegenkaese-baellchen",
-     "name": "Gebackene Ziegenkäse-Bällchen",
+     "id": "1-blumenkohlsuppe",
+     "name": "1. Blumenkohlsuppe",
      "lines": [
       [
-       "Knuspriger Ziegenkäse | Yuzu-Honig | gerösteter Sesam (G, C, A)"
+       "Blumenkohl | Kokosmilch | Zitronengras (F, L)"
       ],
       [
-       "9,90 €"
+       "6,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 990
+       "priceCents": 690
       }
      ]
     },
     {
-     "id": "rinder-tatar-miso-mayo",
-     "name": "Rinder-Tatar | Miso-Mayo",
+     "id": "2-kuerbiscremesuppe",
+     "name": "2. Kürbiscremesuppe",
      "lines": [
       [
-       "Hüftfilet | Miso-Mayonnaise | Wachtelei | Sesam-Cracker (C, F, M, S)"
+       "Hokkaidokürbis | Butter | Muskatnuss (G)"
       ],
       [
-       "15,90 €"
+       "7,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1590
+       "priceCents": 790
       }
      ]
     },
     {
-     "id": "ebi-tempura-sommerrollen-reisnudeln",
-     "name": "Ebi-Tempura Sommerrollen | Reisnudeln",
+     "id": "3-misoshiru-suppe",
+     "name": "3. Misoshiru-Suppe",
      "lines": [
       [
-       "Knusprige Garnelen in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
+       "Tofu | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln (F)"
       ],
       [
-       "9,90 €"
+       "4,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 990
+       "priceCents": 490
       }
      ]
     },
     {
-     "id": "sake-tempura-sommerrollen-reisnudeln",
-     "name": "Sake-Tempura Sommerrollen | Reisnudeln",
+     "id": "4-misosake-suppe",
+     "name": "4. Misosake-Suppe",
      "lines": [
       [
-       "Knusprige Lachs in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
+       "Frischer Lachs | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln (D, F)"
       ],
       [
-       "8,90 €"
+       "6,50 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 890
+       "priceCents": 650
       }
      ]
     },
     {
-     "id": "nem",
-     "name": "Nem",
+     "id": "5-misokaisen-suppe",
+     "name": "5. Misokaisen-Suppe",
      "lines": [
       [
-       "Knusprige Frühlingsrollen | Gemischtes Hackfleisch"
+       "Meeresfrüchte-Mix | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln (B, D, F)"
       ],
       [
-       "5,90 €"
+       "7,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 590
+       "priceCents": 790
       }
      ]
     },
     {
-     "id": "gyoza",
-     "name": "Gyoza",
+     "id": "6-tom-yum-goong-suppe",
+     "name": "6. Tom Yum Goong-Suppe | scharf-saure Garnelensuppe",
      "lines": [
       [
-       "Knusprige Teigtaschen Wahlweise mit Hühnchen, Garnele oder Tofu (A, C, B, F, L)"
+       "Garnelen | Champignons | Tomaten | Zitronengras | Galgant | Limettenblätter | Koriander (B)"
       ],
       [
-       "5,60 €"
+       "8,50 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 560
+       "priceCents": 850
+      }
+     ]
+    },
+    {
+     "id": "7-tom-kha-gai-suppe",
+     "name": "7. Tom Kha Gai-Suppe | scharf-saure Hühnersuppe",
+     "lines": [
+      [
+       "Hühnerfleisch | Champignons | Kokosmilch | Zitronengras | Galgant | Limettenblätter | Koriander (F)"
+      ],
+      [
+       "7,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 790
       }
      ]
     }
@@ -141,8 +160,8 @@
    "title": "Salate",
    "items": [
     {
-     "id": "tomate-burrata-thai-basilikum",
-     "name": "Tomate | Burrata | Thai Basilikum",
+     "id": "s1-tomate-burrata-thai-basilikum",
+     "name": "S1. Tomate | Burrata | Thai Basilikum",
      "lines": [
       [
        "Rispentomaten | cremige Burrata | Thai Basilikum (F, M, S)"
@@ -160,8 +179,8 @@
      ]
     },
     {
-     "id": "gemischter-saison-salat",
-     "name": "Gemischter Saison Salat",
+     "id": "s2-gemischter-saison-salat",
+     "name": "S2. Gemischter Saison Salat",
      "lines": [
       [
        "Ponzu-Dressing | Tofu-Spieße (G)"
@@ -179,11 +198,11 @@
      ]
     },
     {
-     "id": "wakame-algen-salat-geroesteter-sesam",
-     "name": "Wakame-Algen-Salat | Gerösteter Sesam",
+     "id": "s3-wakame-algen-salat-geroesteter-sesam",
+     "name": "S3. Wakame-Algen-Salat | Gerösteter Sesam",
      "lines": [
       [
-       "Seealgen | Sesamöl | Helle Sojasauce | Reisessig | Mirin"
+       "Seealgen | Sesamöl | Helle Sojasauce | Reisessig | Mirin (N, F, S)"
       ],
       [
        "5,90 €"
@@ -198,11 +217,11 @@
      ]
     },
     {
-     "id": "sake-avocado-salat-tobiko",
-     "name": "Sake-Avocado-Salat | Tobiko",
+     "id": "s4-sake-avocado-salat-tobiko",
+     "name": "S4. Sake-Avocado-Salat | Tobiko",
      "lines": [
       [
-       "Frischer Lachs | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce"
+       "Frischer Lachs | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce (D, F, C)"
       ],
       [
        "7,90 €"
@@ -217,11 +236,11 @@
      ]
     },
     {
-     "id": "ebi-avocado-salat-tobiko",
-     "name": "Ebi-Avocado-Salat | Tobiko",
+     "id": "s5-ebi-avocado-salat-tobiko",
+     "name": "S5. Ebi-Avocado-Salat | Tobiko",
      "lines": [
       [
-       "Garnele | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce"
+       "Garnele | Avocado | Gurke | Gemischter Blattsalat | Fischrogen | Sauce (B, F, C)"
       ],
       [
        "8,50 €"
@@ -236,11 +255,11 @@
      ]
     },
     {
-     "id": "sake-tempura-salat",
-     "name": "Sake-Tempura-Salat",
+     "id": "s6-sake-tempura-salat",
+     "name": "S6. Sake-Tempura-Salat",
      "lines": [
       [
-       "Knusprige Lachs | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce"
+       "Knusprige Lachs | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce (A, D, F, C)"
       ],
       [
        "8,90 €"
@@ -255,27 +274,27 @@
      ]
     },
     {
-     "id": "ebi-tempura-salat",
-     "name": "Ebi-Tempura-Salat",
+     "id": "s7-ebi-tempura-salat",
+     "name": "S7. Ebi-Tempura-Salat",
      "lines": [
       [
-       "Knusprige Garnelen | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce"
+       "Knusprige Garnelen | Tempura-Teig | Avocado | Gurke | Gemischter Blattsalat | Sauce (A, B, F, C)"
       ],
       [
-       "9,90 €"
+       "8,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 990
+       "priceCents": 890
       }
      ]
     },
     {
-     "id": "edamame",
-     "name": "Edamame",
+     "id": "s8-edamame",
+     "name": "S8. Edamame",
      "lines": [
       [
        "Gedämpfte Sojabohnen in der Schote | Meersalz (F)"
@@ -295,217 +314,133 @@
    ]
   },
   {
-   "title": "Suppen",
+   "title": "Vorspeisen",
    "items": [
     {
-     "id": "blumenkohlsuppe",
-     "name": "Blumenkohlsuppe",
+     "id": "v1-gebackene-ziegenkaese-baellchen",
+     "name": "V1. Gebackene Ziegenkäse-Bällchen",
      "lines": [
       [
-       "Blumenkohl | Kokosmilch | Zitronengras (F, L)"
+       "Knuspriger Ziegenkäse | Yuzu-Honig | gerösteter Sesam (G, C, A)"
       ],
       [
-       "6,90 €"
+       "9,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 690
+       "priceCents": 990
       }
      ]
     },
     {
-     "id": "kuerbiscremesuppe",
-     "name": "Kürbiscremesuppe",
+     "id": "v2-rinder-tatar-miso-mayo",
+     "name": "V2. Rinder-Tatar | Miso-Mayo",
      "lines": [
       [
-       "Hokkaidokürbis | Butter | Muskatnuss"
+       "Hüftfilet | Miso-Mayonnaise | Wachtelei | Sesam-Cracker (C, F, M, S)"
       ],
       [
-       "7,90 €"
+       "15,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 790
+       "priceCents": 1590
       }
      ]
     },
     {
-     "id": "misoshiru-suppe",
-     "name": "Misoshiru-Suppe",
+     "id": "v3-ebi-tempura-sommerrollen-reisnudeln",
+     "name": "V3. Ebi-Tempura Sommerrollen | Reisnudeln",
      "lines": [
       [
-       "Tofu | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+       "Knusprige Garnelen in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
       ],
       [
-       "4,90 €"
+       "9,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 490
+       "priceCents": 990
       }
      ]
     },
     {
-     "id": "misosake-suppe",
-     "name": "Misosake-Suppe",
+     "id": "v4-sake-tempura-sommerrollen-reisnudeln",
+     "name": "V4. Sake-Tempura Sommerrollen | Reisnudeln",
      "lines": [
       [
-       "Frischer Lachs | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+       "Knusprige Lachs in Tempura-Teig | Möhren | Gurke | Blattsalat | Koriander | Sauce (F, M, S)"
       ],
       [
-       "6,50 €"
+       "8,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 650
+       "priceCents": 890
       }
      ]
     },
     {
-     "id": "misokaisen-suppe",
-     "name": "Misokaisen-Suppe",
+     "id": "v5-nem",
+     "name": "V5. Nem",
      "lines": [
       [
-       "Meeresfrüchte-Mix | Dashi-Brühe | Miso-Paste | Wakame-Algen | Frühlingszwiebeln"
+       "Knusprige Frühlingsrollen | Gemischtes Hackfleisch (A, C, F)"
       ],
       [
-       "7,90 €"
+       "5,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 790
+       "priceCents": 590
       }
      ]
     },
     {
-     "id": "tom-yum-goong-suppe",
-     "name": "Tom Yum Goong-Suppe | scharf-saure Garnelensuppe",
+     "id": "v6-gyoza",
+     "name": "V6. Gyoza",
      "lines": [
       [
-       "Garnelen | Champignons | Tomaten | Zitronengras | Galgant | Limettenblätter | Koriander"
+       "Knusprige Teigtaschen Wahlweise mit Hühnchen, Garnele oder Tofu (A, C, B, F, L)"
       ],
       [
-       "8,50 €"
+       "5,60 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 850
-      }
-     ]
-    },
-    {
-     "id": "tom-kha-gai-suppe",
-     "name": "Tom Kha Gai-Suppe | scharf-saure Hühnersuppe",
-     "lines": [
-      [
-       "Hühnerfleisch | Champignons | Kokosmilch | Zitronengras | Galgant | Limettenblätter | Koriander"
-      ],
-      [
-       "7,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 790
+       "priceCents": 560
       }
      ]
     }
    ]
   },
   {
-   "title": "Hauptgerichte",
+   "title": "Hauptspeisen",
    "items": [
     {
-     "id": "bertoldshofner-zwiebelrostbraten-250g",
-     "name": "Bertoldshofner Zwiebelrostbraten 250g",
+     "id": "h1-tom-yum-goong-nudelsuppe",
+     "name": "H1. Tom Yum Goong-nudelSuppe | scharf-saure",
      "lines": [
       [
-       "Argentinisches Rind, Käsespätzle, Speckbohnen, zweierlei Zwiebeln, Dunkelbiersoße"
-      ],
-      [
-       "28,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 2890
-      }
-     ]
-    },
-    {
-     "id": "rumpsteak-cafe-de-paris",
-     "name": "Rumpsteak Café de Paris",
-     "lines": [
-      [
-       "Argentinisches Rumpsteak mit Paprikakräuterbutter, Kartoffelecken und Gemüse"
-      ],
-      [
-       "300g -",
-       "34,90 €",
-       "250g -",
-       "28,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "300g",
-       "label": "300g",
-       "priceCents": 3490
-      },
-      {
-       "id": "250g",
-       "label": "250g",
-       "priceCents": 2890
-      }
-     ]
-    },
-    {
-     "id": "zuericher-geschnetzeltes",
-     "name": "Züricher Geschnetzeltes",
-     "lines": [
-      [
-       "Züricher Art mit hausgemachten Butterrösti, Preisbeeren und Gemüse"
-      ],
-      [
-       "23,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 2390
-      }
-     ]
-    },
-    {
-     "id": "knusperschnitzel-nach-art-des-hauses",
-     "name": "Knusperschnitzel nach Art des Hauses",
-     "lines": [
-      [
-       "vom Hähnchenbrustfilet mit Kürbiskern und Panko ummantelt\nmit frischem Kartoffel-Gurkensalat"
+       "Meeresfrüchte-Mix | Champignons | Reisnudeln | Zitronengras | Galgant | Limettenblätter | Koriander (A, C, F)"
       ],
       [
        "18,90 €"
@@ -520,49 +455,11 @@
      ]
     },
     {
-     "id": "klassisches-schnitzel-wiener-art",
-     "name": "Klassisches Schnitzel Wiener Art",
+     "id": "h2-allgaeuer-kalbschnitzel-tonkatsu-style-kaese",
+     "name": "H2. Allgäuer kalbSCHNITZEL | TONKATSU-STYLE | käse",
      "lines": [
       [
-       "vom Stroh-Schwein mit frischem Kartoffel-Gurkensalsat"
-      ],
-      [
-       "17,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 1790
-      }
-     ]
-    },
-    {
-     "id": "ofenfrischer-schweinekrustenbraten",
-     "name": "Ofenfrischer Schweinekrustenbraten",
-     "lines": [
-      [
-       "Kartoffelknödel mit Brezenschmelze, Natursoße\ndazu Serviettenknödel, Apfelblaukraut"
-      ],
-      [
-       "16,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 1690
-      }
-     ]
-    },
-    {
-     "id": "original-wiener-backhendl-ausgeloest",
-     "name": "Original Wiener Backhendl ausgelöst",
-     "lines": [
-      [
-       "in Butterschmalz gebacken, handgerührte Preiselbeeren und Zitrone, \ndazu hausgemachter Kartoffel-Gurkensalat"
+       "Von Kalb, überbacken mit Käse, Tonkatsu-Sauce, japanischer Kartoffelsalat (A, C, F, M)"
       ],
       [
        "22,90 €"
@@ -577,21 +474,312 @@
      ]
     },
     {
-     "id": "cordon-bleu-des-hauses",
-     "name": "Cordon -Bleu des Hauses",
+     "id": "h3-schweinebraten-dunkel-bier-sauce",
+     "name": "H3. SCHWEINEBRATEN | DUNKEL-BIER-SAUCE",
      "lines": [
       [
-       "Klassisches Cordon Bleu gefüllt mit Schinken & Käsespätzle, Waldpilzrahm Soße, dazu kleiner Vitamin Salat"
+       "Schweine Krustenbraten, dunkle Bier-Sauce, Sesam-Rotkraut, Klöße (S, L, F)"
       ],
       [
-       "27,90 €"
+       "18,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 2790
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h4-fraenkisches-schaeufele-dunkel-bier-sauce",
+     "name": "H4. FRÄNKISCHES SCHÄUFELE | DUNKEL-BIER-SAUCE",
+     "lines": [
+      [
+       "Knuspriges Schulterstück vom Schwein, dunkle Bier-Sauce, Sesam-Rotkraut, Klöße (S, L, N)"
+      ],
+      [
+       "20,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2090
+      }
+     ]
+    },
+    {
+     "id": "h5-entenbrust-rotkohlsalat-5-gewuerze-jus",
+     "name": "H5. ENTENBRUST | ROTKOHLSALAT | 5-GEWÜRZE-JUS",
+     "lines": [
+      [
+       "Knusprige Entenbrust, asiatischer Rotkohlsalat, aromatische Gewürzsauce, Klöße (S, L)"
+      ],
+      [
+       "23,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2390
+      }
+     ]
+    },
+    {
+     "id": "h6-gegrillte-forelle-ponzu-butter",
+     "name": "H6. GEGRILLTE FORELLE | PONZU-BUTTER",
+     "lines": [
+      [
+       "Ganze Forelle, Ponzu-Butter, gedämpfter Pak Choi, Jasminreis (D, G, F, S)"
+      ],
+      [
+       "21,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
+     ]
+    },
+    {
+     "id": "h7-gegrillter-lachs-miso-yuzu-glasur",
+     "name": "H7. GEGRILLTER LACHS | MISO-YUZU-GLASUR",
+     "lines": [
+      [
+       "Lachsfilet, gedämpfter Pak Choi, Jasminreis (D, F, S)"
+      ],
+      [
+       "21,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
+     ]
+    },
+    {
+     "id": "h8-bun-cha",
+     "name": "H8. BUN CHA",
+     "lines": [
+      [
+       "Gegrillter Marinierter Schweinenacken, Reisnudeln, Limetten-Fischsauce-Dip, Salat und asiatische Kräuter (D, F, M, S)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h9-bun-bo-nam-bo",
+     "name": "H9. BÚN BÒ NAM BỘ",
+     "lines": [
+      [
+       "Lauwarme Reisnudeln | zart gebratenem Rindfleisch | Salat, asiatischen Kräutern | gerösteten Erdnüssen | Röstzwiebeln | Limetten-Fischsauce-Dressing (A, C, F)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h10-bun-nem",
+     "name": "H10. BUN NEM",
+     "lines": [
+      [
+       "Frühlingsrollen, Reisnudeln, Limetten-Fischsauce-Dip, Salat und asiatische Kräuter (D, F, M, S)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h11-pho-xao-bo",
+     "name": "H11. PHO XAO BO",
+     "lines": [
+      [
+       "Reisbandnudeln gebraten, Steakhüfte, asiatische Kräuter (C, F, S)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h12-huehnchenbrustfilet-rotes-curry",
+     "name": "H12. HÜHNCHENBRUSTFILET | ROTES CURRY",
+     "lines": [
+      [
+       "Hühnchenbrust gebacken, rotes Curry, Saisongemüse, Jasminreis (A, C, F)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h13-allgaeuer-kaesespaetzle-huehnerfleisch-teriyaki-sauce",
+     "name": "H13. Allgäuer Käsespätzle | HÜHNERFLEISCH | TERIYAKI-SAUCE",
+     "lines": [
+      [
+       "Käsespätzle, knusprige Hühnerfleisch gebacken, Teriyaki-Sauce und zweierlei Zwiebel (A, C, F)"
+      ],
+      [
+       "21,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2190
+      }
+     ]
+    },
+    {
+     "id": "h14-tiger-garnele-rotes-curry",
+     "name": "H14. TIGER GARNELE | ROTES CURRY",
+     "lines": [
+      [
+       "Tiger Garnele, rotes Curry, Saisongemüse, Jasminreis (B, F)"
+      ],
+      [
+       "19,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1990
+      }
+     ]
+    },
+    {
+     "id": "h15-udon-nudeln-huehnerfleisch-teriyaki-sauce",
+     "name": "H15. UDON NUDELN | HÜHNERFLEISCH | TERIYAKI-SAUCE",
+     "lines": [
+      [
+       "Japanische Udon Nudeln, Hühnerfleisch, Teriyaki-Sauce, Lauchzwiebeln, Karotten (D, F, M, S)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "h16-kalbschnitzel-jaegersauce",
+     "name": "H16. kalbSCHNITZEL | JÄGERSAUCE",
+     "lines": [
+      [
+       "Von Kalb, Jägersauce klassisch, Pommes Frites (A, C, F, M)"
+      ],
+      [
+       "20,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2090
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Kidsmenü",
+   "subtitle": "(bis 12 Jahre)",
+   "items": [
+    {
+     "id": "k1-huehnchenbrustfilet-pommes-limonade",
+     "name": "K1. HÜHNCHENBRUSTFILET | POMMES | LIMONADE",
+     "lines": [
+      [
+       "Hühnchenbrust gebacken, Pommes, Sauce nach Wahl, Limonade 0,20l nach Wahl (A, C, F)"
+      ],
+      [
+       "10,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
+      }
+     ]
+    },
+    {
+     "id": "k2-reisbandnudeln-gemuese",
+     "name": "K2. REISBANDNUDELN | GEMÜSE",
+     "lines": [
+      [
+       "Reisbandnudeln gebraten, Gemüse, Ei, Limonade 0,20l nach Wahl (C, F, S)"
+      ],
+      [
+       "10,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1090
       }
      ]
     }
@@ -601,51 +789,11 @@
    "title": "Vegetarisch",
    "items": [
     {
-     "id": "asiatisches-thai-curry",
-     "name": "Asiatisches Thai Curry",
+     "id": "ve1-allgaeuer-kaesespaetzle",
+     "name": "VE1. Allgäuer Käsespätzle",
      "lines": [
       [
-       "mit Mu err Pilze, Thai-knoblauch in roter Curry Soße, dazu Sesam Reis"
-      ],
-      [
-       "21,90 €"
-      ]
-     ],
-     "vegan": true,
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 2190
-      }
-     ]
-    },
-    {
-     "id": "gegrillte-krautkrapfen",
-     "name": "Gegrillte Krautkrapfen",
-     "lines": [
-      [
-       "mit einem kleinen Vitamin Salat"
-      ],
-      [
-       "21,90 €"
-      ]
-     ],
-     "vegan": true,
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 2190
-      }
-     ]
-    },
-    {
-     "id": "allgaeuer-kaesespaetzle",
-     "name": "Allgäuer Käsespätzle",
-     "lines": [
-      [
-       "Mit zweierlei Zwiebel, verschiedene Käsesorten kleiner Blattsalat"
+       "Mit zweierlei Zwiebel, verschiedene Käsesorten kleiner Blattsalat (A, C, F)"
       ],
       [
        "15,90 €"
@@ -658,47 +806,245 @@
        "priceCents": 1590
       }
      ]
-    }
-   ]
-  },
-  {
-   "title": "Fisch",
-   "items": [
+    },
     {
-     "id": "regenbogenforelle-muellerin-im-ganzen",
-     "name": "Regenbogenforelle Müllerin im Ganzen",
+     "id": "ve2-knuspriges-tofu-schnitzel-tonkatsu-sauce",
+     "name": "VE2. KNUSPRIGES TOFU-SCHNITZEL | TONKATSU-SAUCE",
      "lines": [
       [
-       "Zitronenbutter, Kräuterkartoffeln, dazu ein kleiner Vitamin Salat"
+       "Panko-Tofu-Schnitzel, Tonkatsu-Sauce, japanischer Kartoffelsalat (A, C, F, M)"
       ],
       [
-       "24,90 €"
+       "16,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 2490
+       "priceCents": 1690
       }
      ]
     },
     {
-     "id": "bertoldshofner-backfisch-vom-welsfilet",
-     "name": "Bertoldshofner Backfisch vom Welsfilet",
+     "id": "ve3-pilz-erdnuss-chili-sauce",
+     "name": "VE3. PILZ | ERDNUSS-CHILI-SAUCE",
      "lines": [
       [
-       "Kartoffel-Gurkensalat, Soße Tatar und Zitrone"
+       "Pilze der Saison, Jasminreis, würzige Erdnuss-Chili-Sauce (E, F)"
       ],
       [
-       "21,90 €"
+       "16,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 2190
+       "priceCents": 1690
+      }
+     ]
+    },
+    {
+     "id": "ve4-geroesteter-blumenkohl-ingwer-miso-sauce",
+     "name": "VE4. GERÖSTETER BLUMENKOHL | INGWER-MISO-SAUCE",
+     "lines": [
+      [
+       "Blumenkohl aus dem Ofen, Ingwer-Miso-Glasur, geröstete Cashewkerne, Jasminreis (F, H, A)"
+      ],
+      [
+       "16,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1690
+      }
+     ]
+    },
+    {
+     "id": "ve5-bun-nem",
+     "name": "VE5. BUN NEM",
+     "lines": [
+      [
+       "vegetarische Frühlingsrollen, Reisnudeln, Limetten-Sojasauce-Dip, Salat und asiatische Kräuter (D, F, M, S)"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    },
+    {
+     "id": "ve6-tofu-rotes-curry",
+     "name": "VE6. TOFU | ROTES-CURRY",
+     "lines": [
+      [
+       "Gebackener Tofu, Red-Curry-Sauce, Saisongemüse, Jasminreis (A, C, F, M)"
+      ],
+      [
+       "17,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1790
+      }
+     ]
+    },
+    {
+     "id": "ve7-udon-nudeln-knusprige-vegane-ente-spinat-sauce",
+     "name": "VE7. UDON NUDELN | KNUSPRIGE VEGANE ENTE | SPINAT-SAUCE",
+     "lines": [
+      [
+       "Japanische Udon Nudeln, Hühnerfleisch, SPINAT-SAUCE, Lauchzwiebeln, Karotten (D, F, M, S)"
+      ],
+      [
+       "19,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1990
+      }
+     ]
+    },
+    {
+     "id": "ve8-allgaeuer-kaesespaetzle-knusprige-vegane-ente-spinat-sauce",
+     "name": "VE8. Allgäuer Käsespätzle | KNUSPRIGE VEGANE ENTE | SPINAT-SAUCE",
+     "lines": [
+      [
+       "Käsespätzle | knusprige Hühnerfleisch gebacken, SPINAT-SAUCE | zweierlei Zwiebel (A, C, F, M)"
+      ],
+      [
+       "20,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2090
+      }
+     ]
+    },
+    {
+     "id": "ve9-knusprige-vegane-ente",
+     "name": "VE9. KNUSPRIGE VEGANE ENTE",
+     "lines": [
+      [
+       "Pflanzliche Alternative, 100% tierfrei, Curry- oder BBQ-Sauce, Reis"
+      ],
+      [
+       "18,90 €"
+      ]
+     ],
+     "vegan": true,
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 1890
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Extra Beilagen",
+   "items": [
+    {
+     "id": "portion-pommes-frites",
+     "name": "Portion Pommes Frites",
+     "lines": [
+      [
+       "3,20 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 320
+      }
+     ]
+    },
+    {
+     "id": "kloesse",
+     "name": "Klöße",
+     "lines": [
+      [
+       "2,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 250
+      }
+     ]
+    },
+    {
+     "id": "reis",
+     "name": "Reis",
+     "lines": [
+      [
+       "2,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 250
+      }
+     ]
+    },
+    {
+     "id": "reisnudeln",
+     "name": "Reisnudeln",
+     "lines": [
+      [
+       "2,50 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 250
+      }
+     ]
+    },
+    {
+     "id": "extra-sauce",
+     "name": "Extra Sauce",
+     "lines": [
+      [
+       "(z. B. Erdnuss, Teriyaki oder Curry)"
+      ],
+      [
+       "2,00 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 200
       }
      ]
     }
@@ -706,11 +1052,11 @@
   },
   {
    "title": "NIGIRI",
-   "subtitle":"(2 Stück)",
+   "subtitle": "(2 Stück)",
    "items": [
     {
-     "id": "50-sake",
-     "name": "50. SAKE",
+     "id": "n1-sake",
+     "name": "N1. SAKE",
      "lines": [
       [
        "Lachs (D)"
@@ -728,8 +1074,8 @@
      ]
     },
     {
-     "id": "51-maguro",
-     "name": "51. MAGURO",
+     "id": "n2-maguro",
+     "name": "N2. MAGURO",
      "lines": [
       [
        "Thunfisch (D)"
@@ -747,8 +1093,8 @@
      ]
     },
     {
-     "id": "52-ebi",
-     "name": "52. EBI",
+     "id": "n3-ebi",
+     "name": "N3. EBI",
      "lines": [
       [
        "Garnele (B)"
@@ -766,8 +1112,8 @@
      ]
     },
     {
-     "id": "53-unagi",
-     "name": "53. UNAGI",
+     "id": "n4-unagi",
+     "name": "N4. UNAGI",
      "lines": [
       [
        "Aal (D, F, S)"
@@ -785,8 +1131,8 @@
      ]
     },
     {
-     "id": "54-avocado",
-     "name": "54. AVOCADO",
+     "id": "n5-avocado",
+     "name": "N5. AVOCADO",
      "lines": [
       [
        "Avocado"
@@ -804,8 +1150,8 @@
      ]
     },
     {
-     "id": "55-tamago",
-     "name": "55. TAMAGO",
+     "id": "n6-tamago",
+     "name": "N6. TAMAGO",
      "lines": [
       [
        "Ei (C)"
@@ -823,8 +1169,8 @@
      ]
     },
     {
-     "id": "56-inari",
-     "name": "56. INARI",
+     "id": "n7-inari",
+     "name": "N7. INARI",
      "lines": [
       [
        "Tofu (F, A, S)"
@@ -842,11 +1188,11 @@
      ]
     },
     {
-     "id": "57-tai",
-     "name": "57. TAI",
+     "id": "n8-tai",
+     "name": "N8. TAI",
      "lines": [
       [
-       "DORADE ()"
+       "DORADE (D)"
       ],
       [
        "5,40 €"
@@ -867,11 +1213,11 @@
    "subtitle": "Geflämmtes Nigiri (2 Stück)",
    "items": [
     {
-     "id": "58-sake-aburi",
-     "name": "58. SAKE ABURI",
+     "id": "n20-sake-aburi",
+     "name": "N20. SAKE ABURI",
      "lines": [
       [
-       "Lachs, MAYO, SOßE, TOBIKO ()"
+       "Lachs | Mayo | Soße | Tobiko (D, C, F)"
       ],
       [
        "5,90 €"
@@ -886,11 +1232,11 @@
      ]
     },
     {
-     "id": "59-maguro-aburi",
-     "name": "59. MAGURO ABURI",
+     "id": "n21-maguro-aburi",
+     "name": "N21. MAGURO ABURI",
      "lines": [
       [
-       "Thunfisch, MAYO, SOßE, TOBIKO ()"
+       "Thunfisch | Mayo | Soße | Tobiko (D, C, F)"
       ],
       [
        "6,40 €"
@@ -905,11 +1251,11 @@
      ]
     },
     {
-     "id": "60-ebi-aburi",
-     "name": "60. EBI",
+     "id": "n22-ebi-aburi",
+     "name": "N22. EBI ABURI",
      "lines": [
       [
-       "Garnele, MAYO, SOßE, TOBIKO ()"
+       "Garnele | Mayo | Soße | Tobiko (B, C, F)"
       ],
       [
        "5,90 €"
@@ -924,11 +1270,11 @@
      ]
     },
     {
-     "id": "61-toro-sake-aburi",
-     "name": "61. TORO SAKE ABURI",
+     "id": "n23-toro-sake-aburi",
+     "name": "N23. TORO SAKE ABURI",
      "lines": [
       [
-       "LachHAUT, MAYO, SOßE, TOBIKO ()"
+       "Lachshaut | Mayo | Soße | Tobiko (D, C, F)"
       ],
       [
        "5,40 €"
@@ -946,11 +1292,11 @@
   },
   {
    "title": "HOSO MAKI",
-   "subtitle": " KLEINE SUSHI ROLLE (6 Stück)",
+   "subtitle": "KLEINE SUSHI ROLLE (6 Stück)",
    "items": [
     {
-     "id": "62-sake",
-     "name": "62. SAKE",
+     "id": "m1-sake",
+     "name": "M1. SAKE",
      "lines": [
       [
        "Lachs (D)"
@@ -968,8 +1314,8 @@
      ]
     },
     {
-     "id": "63-tekka",
-     "name": "63. TEKKA",
+     "id": "m2-tekka",
+     "name": "M2. TEKKA",
      "lines": [
       [
        "Thunfisch (D)"
@@ -987,8 +1333,8 @@
      ]
     },
     {
-     "id": "64-ebi",
-     "name": "64. EBI",
+     "id": "m3-ebi",
+     "name": "M3. EBI",
      "lines": [
       [
        "Garnele, MAYO (B)"
@@ -1006,11 +1352,11 @@
      ]
     },
     {
-     "id": "65-kanpyo",
-     "name": "65. KANPYO",
+     "id": "m4-kanpyo",
+     "name": "M4. KANPYO",
      "lines": [
       [
-       "Kürbis"
+       "Kürbis (F, S)"
       ],
       [
        "4,20 €"
@@ -1025,11 +1371,11 @@
      ]
     },
     {
-     "id": "66-unakyu",
-     "name": "66. UNAKYU",
+     "id": "m5-unakyu",
+     "name": "M5. UNAKYU",
      "lines": [
       [
-       "Aal, GURKE (D, F, S)"
+       "Aal | Gurke (D, F, S)"
       ],
       [
        "5,70 €"
@@ -1044,8 +1390,8 @@
      ]
     },
     {
-     "id": "67-avocado",
-     "name": "67. AVOCADO",
+     "id": "m6-avocado",
+     "name": "M6. AVOCADO",
      "lines": [
       [
        "Avocado"
@@ -1063,8 +1409,8 @@
      ]
     },
     {
-     "id": "68-tamago",
-     "name": "68. TAMAGO",
+     "id": "m7-tamago",
+     "name": "M7. TAMAGO",
      "lines": [
       [
        "Ei (C)"
@@ -1082,8 +1428,8 @@
      ]
     },
     {
-     "id": "69-kappa",
-     "name": "69. KAPPA",
+     "id": "m8-kappa",
+     "name": "M8. KAPPA",
      "lines": [
       [
        "Gurke"
@@ -1101,8 +1447,8 @@
      ]
     },
     {
-     "id": "70-oshinko",
-     "name": "70. OSHINKO",
+     "id": "m9-oshinko",
+     "name": "M9. OSHINKO",
      "lines": [
       [
        "eingelegter gelber Rettich (S)"
@@ -1120,11 +1466,11 @@
      ]
     },
     {
-     "id": "71-surimi-avocado",
-     "name": "71. SURIMI AVOCADO",
+     "id": "m10-surimi-avocado",
+     "name": "M10. SURIMI AVOCADO",
      "lines": [
       [
-       "SURIMI, AVOCADO ()"
+       "Surimi | Avocado (B, D, F)"
       ],
       [
        "4,40 €"
@@ -1142,11 +1488,11 @@
   },
   {
    "title": "INSIDE OUT",
-   "subtitle": " (8 Stück)",
+   "subtitle": "(8 Stück)",
    "items": [
     {
-     "id": "72-sake-avocado",
-     "name": "72. SAKE AVOCADO",
+     "id": "i1-sake-avocado",
+     "name": "I1. SAKE AVOCADO",
      "lines": [
       [
        "Lachs | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1164,8 +1510,8 @@
      ]
     },
     {
-     "id": "73-maguro-avocado",
-     "name": "73. MAGURO AVOCADO",
+     "id": "i2-maguro-avocado",
+     "name": "I2. MAGURO AVOCADO",
      "lines": [
       [
        "Thunfisch | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1183,8 +1529,8 @@
      ]
     },
     {
-     "id": "74-ebi-avocado",
-     "name": "74. EBI AVOCADO",
+     "id": "i3-ebi-avocado",
+     "name": "I3. EBI AVOCADO",
      "lines": [
       [
        "Garnele | Avocado | Mayo | Gurke | Tobiko (B, C, F, N, S)"
@@ -1202,27 +1548,27 @@
      ]
     },
     {
-     "id": "75-ebi-tempura",
-     "name": "75. EBI tempura",
+     "id": "i4-ebi-tempura",
+     "name": "I4. EBI tempura",
      "lines": [
       [
        "Knusprige Garnelen | Mayo | Gurke | Tobiko (B, C, F, N, S)"
       ],
       [
-       "11,90 €"
+       "10,50 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 950
+       "priceCents": 1050
       }
      ]
     },
     {
-     "id": "76-tamago-avocado",
-     "name": "76. TAMAGO AVOCADO",
+     "id": "i5-tamago-avocado",
+     "name": "I5. TAMAGO AVOCADO",
      "lines": [
       [
        "Omelette | Avocado | Sesam | Gurke (C, N, S)"
@@ -1240,8 +1586,8 @@
      ]
     },
     {
-     "id": "77-kanpyo-avocado",
-     "name": "77. KANPYO AVOCADO",
+     "id": "i6-kanpyo-avocado",
+     "name": "I6. KANPYO AVOCADO",
      "lines": [
       [
        "Kürbis | Avocado | Sesam | Gurke (F, N, S)"
@@ -1259,8 +1605,8 @@
      ]
     },
     {
-     "id": "78-oshinko",
-     "name": "78. OSHINKO",
+     "id": "i7-oshinko",
+     "name": "I7. OSHINKO",
      "lines": [
       [
        "rettich | Avocado | Sesam | Gurke (F, N, S)"
@@ -1284,8 +1630,8 @@
    "subtitle": "(8 Stücke)",
    "items": [
     {
-     "id": "79-special-sake",
-     "name": "79. SPECIAL SAKE",
+     "id": "i20-special-sake",
+     "name": "I20. SPECIAL SAKE",
      "lines": [
       [
        "Lachs on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1303,8 +1649,8 @@
      ]
     },
     {
-     "id": "80-special-sake-aburi",
-     "name": "80. SPECIAL SAKE ABURI",
+     "id": "i21-special-sake-aburi",
+     "name": "I21. SPECIAL SAKE ABURI",
      "lines": [
       [
        "GeflämmteR Lachs on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1322,8 +1668,8 @@
      ]
     },
     {
-     "id": "81-volcano",
-     "name": "81. VOLCANO",
+     "id": "i22-volcano",
+     "name": "I22. VOLCANO",
      "lines": [
       [
        "Thunfisch on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1341,8 +1687,8 @@
      ]
     },
     {
-     "id": "82-volcano-aburi",
-     "name": "82. VOLCANO aburi",
+     "id": "i23-volcano-aburi",
+     "name": "I23. VOLCANO aburi",
      "lines": [
       [
        "GeflämmteR Thunfisch on top | Avocado | Mayo | Schnittlauch | Tobiko (D, C, F, N, S)"
@@ -1360,27 +1706,27 @@
      ]
     },
     {
-     "id": "83-dragon",
-     "name": "83. DRAGON",
+     "id": "i24-dragon",
+     "name": "I24. DRAGON",
      "lines": [
       [
        "Aal on top | Knusprige Garnelen | Mayo | Gurke | Tobiko (D, B, C, F, N, S)"
       ],
       [
-       "15,50 €"
+       "16,50 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1550
+       "priceCents": 1650
       }
      ]
     },
     {
-     "id": "84-dragon-special",
-     "name": "84. Dragon special",
+     "id": "i25-dragon-special",
+     "name": "I25. Dragon special",
      "lines": [
       [
        "Geflämmte Aal & LACHS on top | Knusprige Garnelen | Mayo | Gurke | Tobiko (D, B, C, F, N, S)"
@@ -1398,11 +1744,11 @@
      ]
     },
     {
-     "id": "85-rainbow",
-     "name": "85. rainbow",
+     "id": "i26-rainbow",
+     "name": "I26. RAINBOW",
      "lines": [
       [
-       "Meeresfrüchte-Mix | surimi | Avocado | Mayo | Schnittlauch | Tobiko"
+       "Meeresfrüchte-Mix | Surimi | Avocado | Mayo | Schnittlauch | Tobiko (B, D, C, F, N, S)"
       ],
       [
        "15,50 €"
@@ -1420,11 +1766,11 @@
   },
   {
    "title": "CRUNCHY ROLLS",
-   "subtitle": "  (6 Stück)",
+   "subtitle": "(6 Stück)",
    "items": [
     {
-     "id": "86-sake",
-     "name": "86. SAKE",
+     "id": "c1-sake",
+     "name": "C1. SAKE",
      "lines": [
       [
        "Lachs | Avocado | Mayo | Spezial Sauce (D, C, F, A, S)"
@@ -1442,8 +1788,8 @@
      ]
     },
     {
-     "id": "87-maguro",
-     "name": "87. MAGURO",
+     "id": "c2-maguro",
+     "name": "C2. MAGURO",
      "lines": [
       [
        "Thunfisch | Avocado | Mayo | Spezial Sauce (D, C, F, A, S)"
@@ -1461,8 +1807,8 @@
      ]
     },
     {
-     "id": "88-kani",
-     "name": "88. KANI",
+     "id": "c3-kani",
+     "name": "C3. KANI",
      "lines": [
       [
        "Krabbe Imitat | Avocado | Mayo | Spezial Sauce (B, C, F, A, S)"
@@ -1480,8 +1826,8 @@
      ]
     },
     {
-     "id": "89-tamago",
-     "name": "89. TAMAGO",
+     "id": "c4-tamago",
+     "name": "C4. TAMAGO",
      "lines": [
       [
        "Omelette | Avocado | Spezial Sauce (C, A, S)"
@@ -1499,8 +1845,8 @@
      ]
     },
     {
-     "id": "90-kanpyo",
-     "name": "90. KANPYO",
+     "id": "c5-kanpyo",
+     "name": "C5. KANPYO",
      "lines": [
       [
        "Kürbis | Avocado | Spezial Sauce (F, A, S)"
@@ -1518,8 +1864,8 @@
      ]
     },
     {
-     "id": "91-ebi",
-     "name": "91. EBI",
+     "id": "c6-ebi",
+     "name": "C6. EBI",
      "lines": [
       [
        "Garnelen | Avocado | Gurke | Mayo (B, C, F, A, S)"
@@ -1537,8 +1883,8 @@
      ]
     },
     {
-     "id": "92-oshinko",
-     "name": "92. OSHINKO",
+     "id": "c7-oshinko",
+     "name": "C7. OSHINKO",
      "lines": [
       [
        "Rettich | Gurke | Spezial Sauce (F, A, S)"
@@ -1556,21 +1902,21 @@
      ]
     },
     {
-     "id": "93-tori",
-     "name": "93. tori",
+     "id": "c8-tori",
+     "name": "C8. TORI",
      "lines": [
       [
-       "Knusprige hühnerbrust | Avocado | Mayo | Spezial Sauce"
+       "Knusprige Hühnerbrust | Avocado | Mayo | Spezial Sauce (A, C, F, S)"
       ],
       [
-       "0,00 €"
+       "8,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 0
+       "priceCents": 890
       }
      ]
     }
@@ -1578,14 +1924,14 @@
   },
   {
    "title": "FUTO ROLLS",
-   "subtitle": "  (6 riesige Stücke)",
+   "subtitle": "(6 riesige Stücke)",
    "items": [
     {
-     "id": "94-kaisen-futo",
-     "name": "94. Kaisen futo",
+     "id": "f1-kaisen-futo",
+     "name": "F1. KAISEN FUTO",
      "lines": [
       [
-       "Meeresfrüchte-Mix | gurke | Avocado | Mayo | spezialsoße"
+       "Meeresfrüchte-Mix | Gurke | Avocado | Mayo | Spezialsoße (B, D, C, F, S)"
       ],
       [
        "11,90 €"
@@ -1600,11 +1946,11 @@
      ]
     },
     {
-     "id": "95-vegan-futo",
-     "name": "95. Vegan futo",
+     "id": "f2-vegan-futo",
+     "name": "F2. VEGAN FUTO",
      "lines": [
       [
-       "rettich | Avocado | Sesam | Gurke | mango-soße | spezialsoße"
+       "Rettich | Avocado | Sesam | Gurke | Mango-Soße | Spezialsoße (F, N, S)"
       ],
       [
        "6,90 €"
@@ -1622,11 +1968,11 @@
   },
   {
    "title": "SUSHI DONBURI (BOWL)",
-   "subtitle": " Rice Bowl mit Salat Mix",
+   "subtitle": "Rice Bowl mit salat mix",
    "items": [
     {
-     "id": "96-sake-don",
-     "name": "96. SAKE DON",
+     "id": "d1-sake-don",
+     "name": "D1. SAKE DON",
      "lines": [
       [
        "Lachs | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, C, F, S)"
@@ -1644,8 +1990,8 @@
      ]
     },
     {
-     "id": "97-tekka-don",
-     "name": "97. TEKKA DON",
+     "id": "d2-tekka-don",
+     "name": "D2. TEKKA DON",
      "lines": [
       [
        "Thunfisch | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, C, F, S)"
@@ -1663,8 +2009,8 @@
      ]
     },
     {
-     "id": "98-hiyashi-don",
-     "name": "98. hiyashi DON",
+     "id": "d3-hiyashi-don",
+     "name": "D3. hiyashi DON",
      "lines": [
       [
        "Lachs | dorade | Thunfisch | Garnelen | surimi | tobiko | Sushi Reis | Mayo | Salat Mix | Spezial Sauce (D, B, C, F, S)"
@@ -1684,15 +2030,78 @@
    ]
   },
   {
-   "title": "SASHIMI MIX",
-   "subtitle": " rohem Fisch – meisterhaft filetiert",
+   "title": "SUSHI Platte",
+   "subtitle": "(A, B, C, D, F, N, S)",
    "items": [
     {
-     "id": "99-sake-sashimi",
-     "name": "99. Sake sashimi",
+     "id": "p1-schloss-sanssouci",
+     "name": "P1. Schloss Sanssouci (für 1 pers.)",
      "lines": [
       [
-       "6 St. Lachs"
+       "5 Nigiri (lachs, thunfisch, garnele, dorade & aal) | 8 St. sake Inside Out | 6 St. sake Crunchy (A, B, C, D, F, N, S)"
+      ],
+      [
+       "28,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 2890
+      }
+     ]
+    },
+    {
+     "id": "p2-schloss-hohenschwangau",
+     "name": "P2. Schloss Hohenschwangau (für 2 pers.)",
+     "lines": [
+      [
+       "6 Nigiri (lachs, thunfisch & dorade) | 8 St. Inside Out | 12 St. Crunchy (A, B, C, D, F, N, S)"
+      ],
+      [
+       "36,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 3690
+      }
+     ]
+    },
+    {
+     "id": "p3-schloss-neuschwanstein",
+     "name": "P3. Schloss Neuschwanstein (für 3 pers.)",
+     "lines": [
+      [
+       "8 Nigiri (lachs, thunfisch, garnele & dorade) | 8 St. Inside Out | 8 St. Inside Out Special | 12 St. Crunchy (A, B, C, D, F, N, S)"
+      ],
+      [
+       "49,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 4990
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "SASHIMI MIX",
+   "subtitle": "rohem Fisch – meisterhaft filetiert",
+   "items": [
+    {
+     "id": "x1-sake-sashimi",
+     "name": "X1. SAKE SASHIMI",
+     "lines": [
+      [
+       "6 St. Lachs (D)"
       ],
       [
        "10,90 €"
@@ -1707,11 +2116,11 @@
      ]
     },
     {
-     "id": "100-maguro-sashimi",
-     "name": "100. Maguro sashimi",
+     "id": "x2-maguro-sashimi",
+     "name": "X2. MAGURO SASHIMI",
      "lines": [
       [
-       "6 St. Thunfisch"
+       "6 St. Thunfisch (D)"
       ],
       [
        "12,90 €"
@@ -1726,8 +2135,8 @@
      ]
     },
     {
-     "id": "101-gruenten",
-     "name": "101. Grünten",
+     "id": "x3-gruenten",
+     "name": "X3. Grünten",
      "lines": [
       [
        "4 St. dorade | 4 St. Thunfisch (D)"
@@ -1745,8 +2154,8 @@
      ]
     },
     {
-     "id": "102-nebelhorn",
-     "name": "102. Nebelhorn",
+     "id": "x4-nebelhorn",
+     "name": "X4. Nebelhorn",
      "lines": [
       [
        "5 St. Lachs | 5 St. Thunfisch (D)"
@@ -1764,8 +2173,8 @@
      ]
     },
     {
-     "id": "103-hochvogel",
-     "name": "103. Hochvogel",
+     "id": "x5-hochvogel",
+     "name": "X5. Hochvogel",
      "lines": [
       [
        "5 St. Lachs | 5 St. Thunfisch | 4 St. Ebi | 5 St. Unagi | 5 St. dorade (D, B, F, S)"
@@ -1779,69 +2188,6 @@
        "id": "standard",
        "label": null,
        "priceCents": 3490
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "title": "SUSHI SET",
-   "subtitle": "  (A, B, C, D, F, N, S)",
-   "items": [
-    {
-     "id": "104-schloss-sanssouci",
-     "name": "104. Schloss Sanssouci (für 1 pers.)",
-     "lines": [
-      [
-       "5 Nigiri (Lachs, Thunfisch, Garnele, Dorade & Aal) | 8 St. sake Inside Out | 6 St. sake Crunchy"
-      ],
-      [
-       "28,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 2890
-      }
-     ]
-    },
-    {
-     "id": "105-schloss-hohenschwangau",
-     "name": "105. Schloss Hohenschwangau (für 2 pers.)",
-     "lines": [
-      [
-       "6 Nigiri (Lachs, Thunfisch & Dorade ) | 8 St. Inside Out | 12 St. Crunchy"
-      ],
-      [
-       "36,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 3690
-      }
-     ]
-    },
-    {
-     "id": "106-schloss-neuschwanstein",
-     "name": "106. Schloss Neuschwanstein (für 3 pers.)",
-     "lines": [
-      [
-       "8 Nigiri (Lachs, Thunfisch, Garnele & Dorade) | 8 St. Inside Out | 8 St. Inside Out Special | 12 St. Crunchy"
-      ],
-      [
-       "49,90 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "standard",
-       "label": null,
-       "priceCents": 4990
       }
      ]
     }
