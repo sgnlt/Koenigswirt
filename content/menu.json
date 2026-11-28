@@ -2194,44 +2194,72 @@
    ]
   },
   {
-   "title": "Dessert",
+   "title": "Nachspeisen",
    "items": [
     {
-     "id": "flambierter-cheesecake-schokoladeneis-und-frische-fruechte",
-     "name": "Flambierter Cheesecake, Schokoladeneis und frische Früchte",
+     "id": "t1-kokos-panna-cotta-mango-passionsfrucht",
+     "name": "T1. KOKOS-PANNA COTTA | MANGO-PASSIONSFRUCHT",
      "lines": [
       [
-       "10,90 €"
+       "Kokosmilch Panna Cotta, Mango-Passionsfruchtspiegel (G)"
+      ],
+      [
+       "6,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 1090
+       "priceCents": 690
       }
      ]
     },
     {
-     "id": "schokoladen-souffle-mit-vanilleeis",
-     "name": "Schokoladen Soufflé mit Vanilleeis",
+     "id": "t2-mochi-matcha-eis-kuchen",
+     "name": "T2. MOCHI MATCHA EIS-KUCHEN",
      "lines": [
       [
-       "8,50 €"
+       "Klebreiskuchen | Matcha-Eis-Füllung | Eis Kugel (A, C, G)"
+      ],
+      [
+       "5,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 850
+       "priceCents": 590
       }
      ]
     },
     {
-     "id": "apfelkuechlein-mit-vanilleeis-und-fruechten",
-     "name": "Apfelküchlein mit Vanilleeis und Früchten",
+     "id": "mochi-sesam-kuchen",
+     "name": "MOCHI SESAM KUCHEN",
      "lines": [
+      [
+       "Klebreiskuchen | Sesampaste-Füllung | Eis Kugel (A, C, G, N)"
+      ],
+      [
+       "5,90 €"
+      ]
+     ],
+     "variants": [
+      {
+       "id": "standard",
+       "label": null,
+       "priceCents": 590
+      }
+     ]
+    },
+    {
+     "id": "t3-banane-gebacken-eis-kokosmilch-dressing",
+     "name": "T3. BANANE GEBACKEN | EIS | KOKOSMILCH DRESSING",
+     "lines": [
+      [
+       "Banane im Teigmantel, Kokosmilch Sauce | Eis Kugel (A, C, G)"
+      ],
       [
        "7,90 €"
       ]
@@ -2245,88 +2273,59 @@
      ]
     },
     {
-     "id": "eis-palatschinken-mit-vanilleeis",
-     "name": "Eis Palatschinken mit Vanilleeis",
+     "id": "t4-suesser-klebreiskuchen",
+     "name": "T4. SÜßER KLEBREISKUCHEN",
      "lines": [
       [
-       "Schokoladen Soße & frischen Beeren"
+       "im Bananenblatt | Kokos-Soße | Erdnuss (E, G)"
       ],
       [
-       "7,80 €"
+       "6,90 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 780
+       "priceCents": 690
       }
      ]
     },
     {
-     "id": "afogato",
-     "name": "Afogato",
+     "id": "t5-affogato-al-caffe",
+     "name": "T5. AFFOGATO (al caffè)",
      "lines": [
       [
-       "Vanilleeis, Doppelter Espresso"
+       "Vanilleeis | Espresso übergossen (C, G, 11)"
       ],
       [
-       "5,80 €"
+       "4,40 €"
       ]
      ],
      "variants": [
       {
        "id": "standard",
        "label": null,
-       "priceCents": 580
+       "priceCents": 440
       }
      ]
     },
     {
-     "id": "gemischtes-eis",
-     "name": "Gemischtes Eis",
+     "id": "t6-kaffee-und-kuchen",
+     "name": "T6. KAFFEE & KUCHEN",
      "lines": [
       [
-       "Vanille, Schoko, Erdbeere",
-       "5,20 €",
-       "mit Sahne",
-       "6,20 €"
+       "Einen Kaffee und ein Stück Kuchen nach Wahl (A, C, G, 11)"
+      ],
+      [
+       "6,90 €"
       ]
      ],
      "variants": [
       {
-       "id": "vanille-schoko-erdbeere",
-       "label": "Vanille, Schoko, Erdbeere",
-       "priceCents": 520
-      },
-      {
-       "id": "mit-sahne",
-       "label": "mit Sahne",
-       "priceCents": 620
-      }
-     ]
-    },
-    {
-     "id": "1-grosse-kugel-eis",
-     "name": "1 große Kugel Eis",
-     "lines": [
-      [
-       "-",
-       "2,40 €",
-       "mit Sahne",
-       "3,40 €"
-      ]
-     ],
-     "variants": [
-      {
-       "id": "ohne-sahne",
-       "label": "ohne Sahne",
-       "priceCents": 240
-      },
-      {
-       "id": "mit-sahne",
-       "label": "mit Sahne",
-       "priceCents": 340
+       "id": "standard",
+       "label": null,
+       "priceCents": 690
       }
      ]
     }
