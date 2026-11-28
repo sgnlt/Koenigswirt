@@ -2235,8 +2235,8 @@
      ]
     },
     {
-     "id": "mochi-sesam-kuchen",
-     "name": "MOCHI SESAM KUCHEN",
+     "id": "t3-mochi-sesam-kuchen",
+     "name": "T3. MOCHI SESAM KUCHEN",
      "lines": [
       [
        "Klebreiskuchen | Sesampaste-Füllung | Eis Kugel (A, C, G, N)"
@@ -2254,8 +2254,8 @@
      ]
     },
     {
-     "id": "t3-banane-gebacken-eis-kokosmilch-dressing",
-     "name": "T3. BANANE GEBACKEN | EIS | KOKOSMILCH DRESSING",
+     "id": "t4-banane-gebacken-eis-kokosmilch-dressing",
+     "name": "T4. BANANE GEBACKEN | EIS | KOKOSMILCH DRESSING",
      "lines": [
       [
        "Banane im Teigmantel, Kokosmilch Sauce | Eis Kugel (A, C, G)"
@@ -2273,8 +2273,8 @@
      ]
     },
     {
-     "id": "t4-suesser-klebreiskuchen",
-     "name": "T4. SÜßER KLEBREISKUCHEN",
+     "id": "t5-suesser-klebreiskuchen",
+     "name": "T5. SÜßER KLEBREISKUCHEN",
      "lines": [
       [
        "im Bananenblatt | Kokos-Soße | Erdnuss (E, G)"
@@ -2292,8 +2292,8 @@
      ]
     },
     {
-     "id": "t5-affogato-al-caffe",
-     "name": "T5. AFFOGATO (al caffè)",
+     "id": "t6-affogato-al-caffe",
+     "name": "T6. AFFOGATO (al caffè)",
      "lines": [
       [
        "Vanilleeis | Espresso übergossen (C, G, 11)"
@@ -2311,8 +2311,8 @@
      ]
     },
     {
-     "id": "t6-kaffee-und-kuchen",
-     "name": "T6. KAFFEE & KUCHEN",
+     "id": "t7-kaffee-und-kuchen",
+     "name": "T7. KAFFEE & KUCHEN",
      "lines": [
       [
        "Einen Kaffee und ein Stück Kuchen nach Wahl (A, C, G, 11)"
