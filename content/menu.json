@@ -456,7 +456,7 @@
     },
     {
      "id": "h2-allgaeuer-kalbschnitzel-tonkatsu-style-kaese",
-     "name": "H2. Allgäuer kalbSCHNITZEL | TONKATSU-STYLE | käse",
+     "name": "H2. ALLGÄUER KALBSCHNITZEL | TONKATSU-STYLE | KÄSE",
      "lines": [
       [
        "Von Kalb, überbacken mit Käse, Tonkatsu-Sauce, japanischer Kartoffelsalat (A, C, F, M)"
@@ -665,7 +665,7 @@
     },
     {
      "id": "h13-allgaeuer-kaesespaetzle-huehnerfleisch-teriyaki-sauce",
-     "name": "H13. Allgäuer Käsespätzle | HÜHNERFLEISCH | TERIYAKI-SAUCE",
+     "name": "H13. ALLGÄUER KÄSESPÄTZLE | HÜHNERFLEISCH | TERIYAKI-SAUCE",
      "lines": [
       [
        "Käsespätzle, knusprige Hühnerfleisch gebacken, Teriyaki-Sauce und zweierlei Zwiebel (A, C, F)"
@@ -722,7 +722,7 @@
     },
     {
      "id": "h16-kalbschnitzel-jaegersauce",
-     "name": "H16. kalbSCHNITZEL | JÄGERSAUCE",
+     "name": "H16. KALBSCHNITZEL | JÄGERSAUCE",
      "lines": [
       [
        "Von Kalb, Jägersauce klassisch, Pommes Frites (A, C, F, M)"
@@ -2030,7 +2030,7 @@
    ]
   },
   {
-   "title": "SUSHI Platte",
+   "title": "SUSHI PLATTE",
    "subtitle": "(A, B, C, D, F, N, S)",
    "items": [
     {
